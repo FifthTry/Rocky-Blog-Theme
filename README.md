@@ -1,2 +1,2 @@
-# Rocky-theme
-Rocky Theme (for FPM Blog)
+# ftd-blog-theme-demo
+ new blog theme
