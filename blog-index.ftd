@@ -145,6 +145,7 @@ padding-right: 150
 
 -- lib.post-seperator:
 src: ./static/post-seperator.png
+width: fill
 
 -- container: blog-wrap
 

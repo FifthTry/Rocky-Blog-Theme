@@ -462,10 +462,12 @@ lang: ftd
 src: static/post-seperator.png
 
 
+
 -- docs.output:
 
 --- post-seperator:
 src: static/post-seperator.png
+width: fill
 
 
 
