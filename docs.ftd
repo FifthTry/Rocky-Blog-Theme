@@ -7,20 +7,32 @@
 
 
 -- ftd.row dark-mode-switcher:
+border-width: 1
+border-color: #fff
+padding: 10
+
+--- ftd.text: Click on mode to switch onto:
+padding-right: 10
 
 --- ftd.text: Dark Mode
 $event-click$: message-host enable-dark-mode
+padding-right: 10
 
 --- ftd.text: Light Mode
 $event-click$: message-host enable-light-mode
+padding-right: 10
+color: #969696
 
 --- ftd.text: System Mode
 $event-click$: message-host enable-system-mode
+padding-right: 10
+color: #000000
 
---- ftd.text: mobile
+--- ftd.text: Mobile
 if: $fpm-ui.mobile
+padding-right: 10
 
---- ftd.text: desktop
+--- ftd.text: Desktop
 if: not $fpm-ui.mobile
 
 
@@ -66,8 +78,10 @@ padding-top: 12
 padding-bottom:  20
 
 --- ftd.text: $caption
-color: white
-background-color: #aed581
+color if $fpm-ui.dark-mode: white
+color: #000000
+background-color if $fpm-ui.dark-mode: #969696
+background-color: \#cccccc
 border-top-radius: 2
 padding-top: 3
 padding-bottom: 3
@@ -85,7 +99,8 @@ padding-bottom: 30
 padding-left: 20
 padding-right: 20
 border-radius: 2
-background-color: #f6faff
+background-color if $fpm-ui.dark-mode: #212121
+background-color: #E7E7E7
 
 
 -- ftd.column code:
