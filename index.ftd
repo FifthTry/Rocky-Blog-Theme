@@ -465,7 +465,7 @@ src: static/post-seperator.png
 
 -- docs.output:
 
---- post-seperator:
+--- seperator-image:
 src: static/post-seperator.png
 width: fill
 
@@ -481,12 +481,20 @@ width: fill
 
 
 
+-- ftd.column main-wrapper:
+width: fill
 
+-- ftd.row header-container:
+width: fill
+background-color: \#ffffff
+padding-left: 150
+padding-right: 150
+padding-top: 30
+padding-bottom: 30
 
-
-
-
-
+-- ftd.row header-left:
+width: fill
+align: left
 
 -- ftd.image nav-logo:
 string src:
@@ -505,6 +513,12 @@ size: 48
 align: left
 font: Itim
 padding-left: 20
+
+-- ftd.row header-right:
+min-width: 350
+align: right
+spacing: 20
+
 
 -- ftd.text nav-link: $title
 caption title:
@@ -526,6 +540,18 @@ optional string height: auto
 height: $height
 align: center
 
+-- ftd.row author-section:
+id: author
+width: fill
+background-color: \#E7E7E7
+padding-left: 150
+padding-right: 150
+padding-top: 50
+padding-bottom: 50
+
+-- ftd.column author-section-left:
+width: fill
+
 -- ftd.text author-title: $title
 caption title:
 optional string link: 
@@ -538,7 +564,6 @@ line-height: 67
 align: left
 font: Itim
 
-
 -- ftd.text author-bio: $title
 caption title:
 optional string link: 
@@ -548,6 +573,9 @@ size: 36
 line-height: 43
 align: left
 font: Itim
+
+-- ftd.column author-section-right:
+min-width: 200
 
 -- ftd.image author-photo:
 optional string link:
@@ -569,6 +597,17 @@ line-height: 28
 align: left
 font: Itim
 
+-- ftd.row post:
+width: fill
+background-color: \#F6F6F6
+padding-left: 150
+padding-right: 150
+padding-top: 50
+spacing: 30
+padding-bottom: 50
+
+-- ftd.column post-image:
+spacing: 10
 
 -- ftd.image post-thumbnail:
 optional string link:
@@ -599,6 +638,9 @@ line-height: 36
 align: left
 font: Itim
 
+-- ftd.column post-details:
+
+
 -- ftd.text post-title: $title
 caption title:
 optional string link: 
@@ -620,7 +662,16 @@ line-height: 43
 align: left
 font: Itim
 
--- ftd.image post-seperator:
+
+-- ftd.row seperator:
+background-color: \#F6F6F6
+width: fill
+padding-top: 20
+padding-bottom: 20
+padding-left: 150
+padding-right: 150
+
+-- ftd.image seperator-image:
 string src:
 src: $src
 optional string width:
@@ -629,3 +680,22 @@ optional string height:
 height: $height
 align: center
 
+
+-- ftd.row footer:
+background-color: \#ffffff
+width: fill
+padding-top: 30
+padding-bottom: 30
+padding-left: 150
+padding-right: 150
+align: center
+
+-- ftd.text footer-link:$title
+caption title:
+optional string link: 
+link: $link 
+text-align: center
+width: fill
+font: Itim
+size: 16
+line-height: 20 

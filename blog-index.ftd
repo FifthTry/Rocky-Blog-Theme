@@ -1,204 +1,153 @@
 -- import: index as lib
--- ftd.column:
-id: blog-wrap
-width: fill
 
+-- lib.main-wrapper:
+id: main
 
--- ftd.row:
-id: header
-width: fill
-background-color: \#ffffff
-padding-left: 150
-padding-right: 150
-padding-top: 30
-padding-bottom: 30
+-- lib.header-container:
+id:header
 
--- ftd.row:
-width: fill
-align: left
+-- lib.header-left:
 
--- lib.nav-logo:
+--- lib.nav-logo:
 src: ./static/logo.png
 link: https://www.fifthtry.com
 
--- lib.site-title: Fifthtry
+--- lib.site-title: Fifthtry
 url: https://www.fifthtry.com
 
-
 -- container: header
-background-color: \#F6F7FB
 
--- ftd.row:
-min-width: 350
-align: right
-spacing: 20
+-- lib.header-right:
 
--- lib.nav-link: Follow us on
+--- lib.nav-link: Follow us on
 
--- lib.nav-icon:
+--- lib.nav-icon:
 src: ./static/twitter.png
 link: https://www.twitter.com/fifthtry
 width: 31
 height: 27
 
--- lib.nav-icon:
+--- lib.nav-icon:
 src: ./static/facebook.png
 link: https://www.facebook.com/fifthtry
 width: 15
 height: 32
 
--- lib.nav-icon:
+--- lib.nav-icon:
 src: ./static/linkedin.png
 link: https://www.linkedin.com/fifthtry
 width: 31
 height: 30
 
--- lib.nav-icon:
+--- lib.nav-icon:
 src: ./static/instagram.png
 link: https://www.instagram.com/fifthtry
 width: 31
 height: 30
 
--- lib.nav-icon:
+--- lib.nav-icon:
 src: ./static/redit.png
 link: https://www.redit.com/fifthtry
 width: 37
 height: 30
 
--- container: blog-wrap
 
--- ftd.row:
+-- container: main
+
+/author section starts here:
+
+-- lib.author-section:
 id: author
-width: fill
-background-color: \#E7E7E7
-padding-left: 150
-padding-right: 150
-padding-top: 50
-padding-bottom: 50
 
--- ftd.column:
+-- lib.author-section-left:
 
--- lib.author-title: Hi, I am Amit Upadhyay
+--- lib.author-title: Hi, I am Amit Upadhyay
 
--- lib.author-bio: I'm a web/software developer who loves to build projects and share valuable ps for new programmers on this blog.
+--- lib.author-bio: I'm a web/software developer who loves to build projects and share valuable ps for new programmers on this blog.
 
 -- container: author
 
--- ftd.row:
-min-width: 200
+-- lib.author-section-right:
 
--- ftd.column:
-
--- lib.author-photo:
+--- lib.author-photo:
 src: ./static/author-default.png
 width: 180
 height: 180
 
--- lib.author-email: amitu@fifthtry.com
+--- lib.author-email: amitu@fifthtry.com
 
--- container: blog-wrap
+/author section ends here:
 
--- ftd.row:
+
+-- container: main
+
+/post starts here::
+
+-- lib.post:
 id: post
-width: fill
-background-color: \#F6F6F6
-padding-left: 150
-padding-right: 150
-padding-top: 50
-spacing: 30
-padding-bottom: 50
 
--- ftd.column:
+-- lib.post-image:
 
--- lib.post-thumbnail:
+--- lib.post-thumbnail:
 link: http://www.post.com
 src: ./static/default-post.png
 width: 330
 height: 170
 
--- lib.timestamp-caption: Published on
+--- lib.timestamp-caption: Published on
 
--- lib.timestamp: 15th Dec 2021
+--- lib.timestamp: 15th Dec 2021
 
 -- container: post
 
--- ftd.row:
-width: fill
-spacing: 40
+-- lib.post-details:
 
--- ftd.column:
+--- lib.post-title: The fundamentals of understanding color theory
 
--- lib.post-title: The fundamentals of understanding color theory
+--- lib.post-intro: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
--- lib.post-intro: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
--- container: blog-wrap
+-- container: main
 
--- ftd.row:
-id: seperator
-background-color: \#F6F6F6
-width: fill
-padding-top: 20
-padding-bottom: 20
-padding-left: 150
-padding-right: 150
+-- lib.seperator:
 
--- lib.post-seperator:
+-- lib.seperator-image:
 src: ./static/post-seperator.png
 width: fill
 
--- container: blog-wrap
+-- container: main
+/post ends here::
 
--- ftd.row:
+/post starts here::
+
+-- lib.post:
 id: post
-width: fill
-background-color: \#F6F6F6
-padding-left: 150
-padding-right: 150
-padding-top: 50
-spacing: 30
-padding-bottom: 50
 
--- ftd.column:
+-- lib.post-image:
 
--- lib.post-thumbnail:
+--- lib.post-thumbnail:
 link: http://www.post.com
 src: ./static/default-post.png
 width: 330
 height: 170
 
--- lib.timestamp-caption: Published on
+--- lib.timestamp-caption: Published on
 
--- lib.timestamp: 15th Dec 2021
+--- lib.timestamp: 15th Dec 2021
 
 -- container: post
 
--- ftd.row:
-width: fill
-spacing: 40
+-- lib.post-details:
 
--- ftd.column:
+--- lib.post-title: The fundamentals of understanding color theory
 
--- lib.post-title: The fundamentals of understanding color theory
-link: ./post/index.html
+--- lib.post-intro: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
--- lib.post-intro: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
--- container: blog-wrap
+-- container: main
 
--- ftd.row:
-id: footer
-background-color: \#ffffff
-width: fill
-padding-top: 30
-padding-bottom: 30
-padding-left: 150
-padding-right: 150
-align: center
+/post ends here::
 
--- ftd.text: © 2022 FPM Blog - Latest FPM News & Updates
-text-align: center
-width: fill
-font: Itim
-size: 16
-line-height: 20
+-- lib.footer:
+
+--- lib.footer-link: © 2022 FPM Blog - Latest FPM News & Updates
