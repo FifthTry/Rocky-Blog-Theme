@@ -78,42 +78,30 @@ id: author
 --- lib.author-photo:
 src: ./static/author-default.png
 width: 180
-height: 180
 
 --- lib.author-email: amitu@fifthtry.com
+
 
 /author section ends here:
 
 
 -- container: main
 
-/post starts here::
-
--- lib.post:
-id: post
-
--- lib.post-image:
-
---- lib.post-thumbnail:
+-- lib.post: The fundamentals of understanding color theory
+timestamp: 15th Dec 2021
 link: http://www.post.com
 src: ./static/default-post.png
-width: 330
-height: 170
 
---- lib.timestamp-caption: Published on
-
---- lib.timestamp: 15th Dec 2021
-
--- container: post
-
--- lib.post-details:
-
---- lib.post-title: The fundamentals of understanding color theory
-
---- lib.post-intro: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 
--- container: main
+-- lib.post: The fundamentals of understanding color theory
+timestamp: 15th Dec 2021
+link: http://www.post.com
+src: ./static/default-post.png
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
 
 -- lib.seperator:
 
@@ -122,37 +110,7 @@ src: ./static/post-seperator.png
 width: fill
 
 -- container: main
-/post ends here::
 
-/post starts here::
-
--- lib.post:
-id: post
-
--- lib.post-image:
-
---- lib.post-thumbnail:
-link: http://www.post.com
-src: ./static/default-post.png
-width: 330
-height: 170
-
---- lib.timestamp-caption: Published on
-
---- lib.timestamp: 15th Dec 2021
-
--- container: post
-
--- lib.post-details:
-
---- lib.post-title: The fundamentals of understanding color theory
-
---- lib.post-intro: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-
--- container: main
-
-/post ends here::
 
 -- lib.footer:
 

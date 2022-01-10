@@ -255,7 +255,8 @@ link: https://www.fifthtry.com/
 --- author-photo:
 src: static/author-default.png
 link: https://www.fifthtry.com/
-width: auto
+width: 180
+height: 180
 
 
 
@@ -281,7 +282,6 @@ src: static/author-default.png
 link: https://www.fifthtry.com/
 width: 180
 height: 180
-
 
 
 -- docs.component: author-email
@@ -416,12 +416,16 @@ This component post-intro is used to show few lines of starting content of the p
 -- docs.code: with caption
 lang: ftd
 
-\-- post-intro: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+\-- post-intro: 
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 
 -- docs.output:
 
---- post-intro: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+--- post-intro: 
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 
 
@@ -435,13 +439,17 @@ This arugument is used to add link to post-intro:
 -- docs.code: with link
 lang: ftd
 
-\-- post-intro: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+\-- post-intro: 
 link: http://www.fifthtry.com
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 -- docs.output:
 
---- post-intro: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+--- post-intro: 
 link: http://www.fifthtry.com
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 
 
@@ -486,12 +494,16 @@ width: fill
 
 -- ftd.row header-container:
 width: fill
-background-color if $fpm-ui.dark-mode: #333333 
+background-color if $fpm-ui.dark-mode: #151515 
 background-color: \#ffffff
 padding-left: 150
+padding-left if $fpm-ui.mobile: 30
 padding-right: 150
+padding-right if $fpm-ui.mobile: 30
 padding-top: 30
+padding-top if $fpm-ui.mobile: 15
 padding-bottom: 30
+padding-bottom if $fpm-ui.mobile: 15
 
 -- ftd.row header-left:
 width: fill
@@ -503,6 +515,8 @@ string link:
 src: $src
 link: $link
 width: auto
+width if $fpm-ui.mobile: 36
+height if $fpm-ui.mobile: 36
 align: left
 
 -- ftd.text site-title: $title
@@ -511,12 +525,14 @@ optional string url:
 link: $url
 color if $fpm-ui.dark-mode: #E4E4E4 
 color: #000000
+size if $fpm-ui.mobile: 21
 size: 48
 align: left
 font: Itim
 padding-left: 20
 
 -- ftd.row header-right:
+if: not $fpm-ui.mobile
 min-width: 350
 align: right
 spacing: 20
@@ -549,9 +565,13 @@ width: fill
 background-color if $fpm-ui.dark-mode: #313131 
 background-color: \#E7E7E7
 padding-left: 150
+padding-left if $fpm-ui.mobile: 30
 padding-right: 150
+padding-right if $fpm-ui.mobile: 30
 padding-top: 50
+padding-top if $fpm-ui.mobile: 15
 padding-bottom: 50
+padding-bottom if $fpm-ui.mobile: 15
 
 -- ftd.column author-section-left:
 width: fill
@@ -576,12 +596,15 @@ link: $link
 color if $fpm-ui.dark-mode: #969696 
 color: #000000
 size: 36
+size if $fpm-ui.mobile: 14
 line-height: 43
+/line-height if $fpm-ui.mobile: 16
 align: left
 font: Itim
 
 -- ftd.column author-section-right:
 min-width: 200
+spacing: 10
 
 -- ftd.image author-photo:
 optional string link:
@@ -591,11 +614,13 @@ link: $link
 optional string width:
 width: $width
 optional string height:
+width if $fpm-ui.mobile: 140
 height: $height
 align: right
 border-radius: 500
 
 -- ftd.text author-email: $title
+if: not $fpm-ui.mobile
 caption title:
 color if $fpm-ui.dark-mode: #BFBFBF
 color: #000000
@@ -604,18 +629,138 @@ line-height: 28
 align: left
 font: Itim
 
--- ftd.row post:
+-- ftd.row post-desktop:
+caption title:
+body body:
+string timestamp-caption: Published on
+string timestamp: 15th Dec 2021
+string link: http://www.post.com
+string src: ./static/default-post.png
+string width: 330
+string height: 170
 width: fill
 background-color if $fpm-ui.dark-mode: #212121
 background-color: \#F6F6F6
+spacing: 30
 padding-left: 150
 padding-right: 150
 padding-top: 50
-spacing: 30
 padding-bottom: 50
+
+--- timestamp-caption: $timestamp-caption
+if: $fpm-ui.mobile
+
+--- timestamp: $timestamp
+if: $fpm-ui.mobile
+
+--- post-image:
+
+--- post-thumbnail:
+link: $link
+src: $src
+width: $width
+height: $height
+
+--- timestamp-caption: $timestamp-caption
+if: not $fpm-ui.mobile
+
+--- timestamp: $timestamp
+if: not $fpm-ui.mobile
+
+--- post-details:
+
+--- post-title: $title
+
+--- post-intro: 
+
+$body
+
+
+-- ftd.column post-mobile:
+caption title:
+body body:
+string timestamp-caption: Published on
+string timestamp: 15th Dec 2021
+string link: http://www.post.com
+string src: ./static/default-post.png
+string width: 330
+string height: 170
+width: fill
+background-color if $fpm-ui.dark-mode: #212121
+background-color: \#F6F6F6
+spacing: 30
+/spacing if $fpm-ui.mobile: 10
+padding-left: 30
+padding-right: 30
+padding-top: 15
+padding-bottom: 15
+
+--- timestamp-caption: $timestamp-caption
+if: $fpm-ui.mobile
+
+--- timestamp: $timestamp
+if: $fpm-ui.mobile
+
+--- post-image:
+
+--- post-thumbnail:
+link: $link
+src: $src
+width: $width
+height: $height
+
+--- timestamp-caption: $timestamp-caption
+if: not $fpm-ui.mobile
+
+--- timestamp: $timestamp
+if: not $fpm-ui.mobile
+
+--- post-details:
+
+--- post-title: $title
+
+--- post-intro: 
+
+$body
+
+
+
+
+-- ftd.column post: 
+caption title:
+body body:
+string timestamp-caption: Published on
+string timestamp: 15th Dec 2021
+string link: http://www.post.com
+string src: ./static/default-post.png
+string width: 330
+string height: 170
+
+--- post-desktop:
+if: not $fpm-ui.mobile
+title: $title
+body: $body
+timestamp-caption: $timestamp-caption
+timestamp: $timestamp
+link: $link
+src: $src
+width: $width
+height: $height
+
+--- post-mobile:
+if: $fpm-ui.mobile
+title: $title
+body: $body
+timestamp-caption: $timestamp-caption
+timestamp: $timestamp
+link: $link
+src: $src
+width: $width
+height: $height
 
 -- ftd.column post-image:
 spacing: 10
+/spacing if not $fpm-ui.mobile: 10
 
 -- ftd.image post-thumbnail:
 optional string link:
@@ -624,28 +769,30 @@ src: $src
 link: $link
 optional string width:
 width: $width
+width if $fpm-ui.mobile: 300
 optional string height:
 height: $height
 align: left
 
 -- ftd.text timestamp-caption: $title
-if: not $fpm-ui.mobile
 caption title:
 color if $fpm-ui.dark-mode: #969696
-color: \#F6F6F6
 color: #8A8A8A
 size: 24
+size if $fpm-ui.mobile: 12
 line-height: 28
-align: left
+/line-height if $fpm-ui.mobile: 14
 font: Itim
-padding-top: 15
+padding-top if not $fpm-ui.mobile: 15
 
 -- ftd.text timestamp: $title
 caption title:
 color if $fpm-ui.dark-mode: #FFFFFF
 color: #000000
 size: 30
+size if $fpm-ui.mobile: 12
 line-height: 36
+/line-height if $fpm-ui.mobile: 14
 align: left
 font: Itim
 
@@ -664,8 +811,8 @@ align: left
 font: Itim
 padding-bottom: 25
 
--- ftd.text post-intro: $title
-caption title:
+-- ftd.text post-intro: 
+body body:
 optional string link: 
 link: $link
 color if $fpm-ui.dark-mode: #969696
@@ -674,6 +821,8 @@ size: 36
 line-height: 43
 align: left
 font: Itim
+
+$body
 
 
 -- ftd.row seperator:
