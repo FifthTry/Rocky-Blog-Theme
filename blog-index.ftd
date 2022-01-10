@@ -60,30 +60,12 @@ height: 30
 
 -- container: main
 
-/author section starts here:
-
--- lib.author-section:
-id: author
-
--- lib.author-section-left:
-
---- lib.author-title: Hi, I am Amit Upadhyay
-
---- lib.author-bio: I'm a web/software developer who loves to build projects and share valuable ps for new programmers on this blog.
-
--- container: author
-
--- lib.author-section-right:
-
---- lib.author-photo:
+-- lib.author: Hi, I am Amit Upadhyay
 src: ./static/author-default.png
-width: 180
+email: amitu@fifthtry.com
+link: aaa
 
---- lib.author-email: amitu@fifthtry.com
-
-
-/author section ends here:
-
+I'm a web/software developer who loves to build projects and share valuable ps for new programmers on this blog.
 
 -- container: main
 
@@ -103,15 +85,4 @@ src: ./static/default-post.png
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 
--- lib.seperator:
-
--- lib.seperator-image:
-src: ./static/post-seperator.png
-width: fill
-
--- container: main
-
-
--- lib.footer:
-
---- lib.footer-link: © 2022 FPM Blog - Latest FPM News & Updates
+-- lib.footer: © 2022 FPM Blog - Latest FPM News & Updates

@@ -213,7 +213,9 @@ lang: ftd
 
 -- docs.output:
 
---- author-bio: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+--- author-bio: 
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 
 
@@ -231,8 +233,9 @@ link: http://www.fifthtry.com
 
 -- docs.output:
 
---- author-bio: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+--- author-bio: 
 link: http://www.fifthtry.com
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 
 
@@ -559,8 +562,15 @@ optional string height: auto
 height: $height
 align: center
 
--- ftd.row author-section:
-id: author
+
+-- ftd.row author:
+caption title:
+body body:
+string src:
+string width: 180
+string height: 180
+string link:
+string email:
 width: fill
 background-color if $fpm-ui.dark-mode: #313131 
 background-color: \#E7E7E7
@@ -572,6 +582,26 @@ padding-top: 50
 padding-top if $fpm-ui.mobile: 15
 padding-bottom: 50
 padding-bottom if $fpm-ui.mobile: 15
+
+--- author-section-left:
+
+--- author-title: $title
+
+--- author-bio: 
+
+$body
+
+--- author-section-right:
+
+--- author-photo:
+link: $link
+src: $src
+width: $width
+height: $height
+
+--- author-email: $email
+
+
 
 -- ftd.column author-section-left:
 width: fill
@@ -589,8 +619,8 @@ line-height: 67
 align: left
 font: Itim
 
--- ftd.text author-bio: $title
-caption title:
+-- ftd.text author-bio: 
+body body:
 optional string link: 
 link: $link
 color if $fpm-ui.dark-mode: #969696 
@@ -601,6 +631,8 @@ line-height: 43
 /line-height if $fpm-ui.mobile: 16
 align: left
 font: Itim
+
+$body
 
 -- ftd.column author-section-right:
 min-width: 200
@@ -632,10 +664,10 @@ font: Itim
 -- ftd.row post-desktop:
 caption title:
 body body:
-string timestamp-caption: Published on
-string timestamp: 15th Dec 2021
-string link: http://www.post.com
-string src: ./static/default-post.png
+string timestamp-caption:
+string timestamp: 
+string link: 
+string src: 
 string width: 330
 string height: 170
 width: fill
@@ -646,6 +678,7 @@ padding-left: 150
 padding-right: 150
 padding-top: 50
 padding-bottom: 50
+
 
 --- timestamp-caption: $timestamp-caption
 if: $fpm-ui.mobile
@@ -679,10 +712,10 @@ $body
 -- ftd.column post-mobile:
 caption title:
 body body:
-string timestamp-caption: Published on
-string timestamp: 15th Dec 2021
-string link: http://www.post.com
-string src: ./static/default-post.png
+string timestamp-caption: 
+string timestamp: 
+string link: 
+string src: 
 string width: 330
 string height: 170
 width: fill
@@ -694,6 +727,7 @@ padding-left: 30
 padding-right: 30
 padding-top: 15
 padding-bottom: 15
+margin-bottom: -1
 
 --- timestamp-caption: $timestamp-caption
 if: $fpm-ui.mobile
@@ -723,7 +757,9 @@ if: not $fpm-ui.mobile
 
 $body
 
-
+--- seperator-image:
+src: ./static/post-seperator.png
+width: fill
 
 
 -- ftd.column post: 
@@ -806,7 +842,9 @@ link: $link
 color if $fpm-ui.dark-mode: #E9E9E9
 color: #000000
 size: 66
+size if $fpm-ui.mobile: 26
 line-height: 79
+/line-height if $fpm-ui.mobile: 26
 align: left
 font: Itim
 padding-bottom: 25
@@ -818,7 +856,9 @@ link: $link
 color if $fpm-ui.dark-mode: #969696
 color: #000000
 size: 36
+size if $fpm-ui.mobile: 15
 line-height: 43
+/line-height if $fpm-ui.mobile: 18
 align: left
 font: Itim
 
@@ -842,17 +882,25 @@ width: $width
 optional string height:
 height: $height
 align: center
+padding-top: 40
+padding-top if $fpm-ui.mobile: 30
 
-
--- ftd.row footer:
+-- ftd.column footer:
+caption title:
+optional body body:
+optional string link:
 background-color if $fpm-ui.dark-mode: #151515
 background-color: \#ffffff
-width: fill
 padding-top: 30
 padding-bottom: 30
 padding-left: 150
 padding-right: 150
 align: center
+width: fill
+
+--- footer-link: $title
+link: $link
+
 
 -- ftd.text footer-link:$title
 color if $fpm-ui.dark-mode: #969696
@@ -860,8 +908,10 @@ color: \#000000
 caption title:
 optional string link: 
 link: $link 
-text-align: center
-width: fill
 font: Itim
 size: 16
+size if $fpm-ui.mobile: 10
 line-height: 20 
+/line-height if $fpm-ui.mobile: 12
+width: fill
+text-align: center
