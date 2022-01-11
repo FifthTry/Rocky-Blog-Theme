@@ -539,8 +539,10 @@ if: not $fpm-ui.mobile
 --- post-details:
 
 --- post-title: $title
+link: $link
 
 --- post-intro: 
+link: $link
 
 $body
 

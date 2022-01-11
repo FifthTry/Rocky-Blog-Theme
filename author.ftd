@@ -23,8 +23,11 @@ padding-bottom if $fpm-ui.mobile: 15
 --- author-section-left:
 
 --- author-title: $title
+link: $link
+
 
 --- author-bio: 
+link: $link
 
 $body
 

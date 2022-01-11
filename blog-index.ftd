@@ -21,7 +21,7 @@ redit-link: https://www.redit.com/fifthtry
 
 -- auth.author: Hi, I am John Cartor
 src: ./static/author-default.png
-email: John Cartor@fifthtry.com
+email: John.Cartor@fifthtry.com
 link: /post/1
 
 I'm a web/software developer who loves to build projects and share valuable ps for new programmers on this blog.
