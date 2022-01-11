@@ -741,7 +741,9 @@ background-color: \#ffffff
 padding-top: 30
 padding-bottom: 30
 padding-left: 150
+padding-left if $fpm-ui.mobile: 30
 padding-right: 150
+padding-right if $fpm-ui.mobile: 30
 align: center
 width: fill
 
@@ -760,5 +762,5 @@ size: 16
 size if $fpm-ui.mobile: 10
 line-height: 20 
 /line-height if $fpm-ui.mobile: 12
-width: fill
+width: percent 100
 text-align: center
