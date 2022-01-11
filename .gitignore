@@ -1,3 +1,5 @@
 .build
 fpm.exe
 *.exe
+.build\
+

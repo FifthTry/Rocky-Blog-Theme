@@ -1,1 +1,470 @@
--- ftd.text: this is new post page
+-- import: fpm-ui
+-- ftd.row post-item-desktop:
+caption title:
+body body:
+string timestamp-caption:
+string timestamp: 
+string link: 
+string src: 
+string width: 330
+string height: 170
+width: fill
+background-color if $fpm-ui.dark-mode: #212121
+background-color: \#F6F6F6
+spacing: 30
+padding-left: 150
+padding-right: 150
+padding-top: 50
+padding-bottom: 50
+
+--- timestamp-caption: $timestamp-caption
+if: $fpm-ui.mobile
+
+--- timestamp: $timestamp
+if: $fpm-ui.mobile
+
+--- post-image:
+
+--- post-thumbnail:
+link: $link
+src: $src
+width: $width
+height: $height
+
+--- timestamp-caption: $timestamp-caption
+if: not $fpm-ui.mobile
+
+--- timestamp: $timestamp
+if: not $fpm-ui.mobile
+
+--- container: ftd.main
+
+--- post-details:
+
+--- post-title: $title
+link: $link
+
+--- post-intro: 
+link: $link
+
+$body
+
+
+--- seperator-image:
+src: ./static/post-seperator.png
+width: fill
+
+
+-- ftd.column post-item-mobile:
+caption title:
+body body:
+string timestamp-caption: 
+string timestamp: 
+string link: 
+string src: 
+string width: 330
+string height: 170
+width: fill
+background-color if $fpm-ui.dark-mode: #212121
+background-color: \#F6F6F6
+spacing: 30
+/spacing if $fpm-ui.mobile: 10
+padding-left: 30
+padding-right: 30
+padding-top: 15
+padding-bottom: 15
+margin-bottom: -1
+
+--- timestamp-caption: $timestamp-caption
+if: $fpm-ui.mobile
+
+--- timestamp: $timestamp
+if: $fpm-ui.mobile
+
+--- post-image:
+
+--- post-thumbnail:
+link: $link
+src: $src
+width: $width
+height: $height
+
+--- timestamp-caption: $timestamp-caption
+if: not $fpm-ui.mobile
+
+--- timestamp: $timestamp
+if: not $fpm-ui.mobile
+
+--- post-details:
+
+--- post-title: $title
+
+--- post-intro: 
+
+$body
+
+--- seperator-image:
+src: ./static/post-seperator.png
+width: fill
+
+
+
+-- ftd.column post-desktop:
+caption title:
+body body:
+optional string sub-title:
+optional string author-image:
+optional string author-image-link:
+optional author-name: $author-name 
+optional author-profile: $author-profile 
+optional author-email: $author-email
+optional string timestamp-caption: 
+optional string timestamp: 
+optional string link: 
+optional string src: 
+optional string paragraph:
+optional string list:
+optional string h2:
+optional string image:
+optional string code:
+optional string width:
+optional string height:
+width: fill
+background-color if $fpm-ui.dark-mode: #212121
+background-color: \#F6F6F6
+spacing: 30
+padding-left: 150
+padding-right: 150
+padding-top: 50
+padding-bottom: 50
+
+--- post-title-large: $title
+
+--- post-sub-title: $sub-title
+
+--- author-photo: 
+image-src: $author-image 
+image-link: $author-image-link
+
+--- container: author-info
+
+--- author-details:
+author-name: $author-name
+author-profile: $author-profile
+author-email: $author-email
+
+
+--- container: author-info
+
+--- ftd.column:
+width: fill
+align: right
+
+--- ftd.text: Published on
+align: right
+text-align: right
+
+--- ftd.text: 15th Dec 2021
+align: right
+text-align: right
+
+
+
+
+
+
+
+-- ftd.column post-mobile:
+caption title:
+body body:
+optional string sub-title:
+optional string author-image:
+optional string author-image-link:
+optional author-name: $author-name 
+optional author-profile: $author-profile 
+optional author-email: $author-email
+optional string timestamp-caption: 
+optional string timestamp: 
+optional string link: 
+optional string src: 
+optional string paragraph:
+optional string list:
+optional string h2:
+optional string image:
+optional string code:
+optional string width:
+optional string height:
+width: fill
+background-color if $fpm-ui.dark-mode: #212121
+background-color: \#F6F6F6
+spacing: 30
+padding-left: 150
+padding-right: 150
+padding-top: 50
+padding-bottom: 50
+
+--- post-title-large: $title
+
+--- post-sub-title: $sub-title
+
+
+
+
+-- ftd.column post-item:
+caption title:
+body body:
+string timestamp-caption: Published on
+string timestamp: 15th Dec 2021
+string link: http://www.post.com
+string src: ./static/default-post.png
+string width: 330
+string height: 170
+
+--- post-item-desktop:
+if: not $fpm-ui.mobile
+title: $title
+body: $body
+timestamp-caption: $timestamp-caption
+timestamp: $timestamp
+link: $link
+src: $src
+width: $width
+height: $height
+
+--- post-item-mobile:
+if: $fpm-ui.mobile
+title: $title
+body: $body
+timestamp-caption: $timestamp-caption
+timestamp: $timestamp
+link: $link
+src: $src
+width: $width
+height: $height
+
+
+
+
+
+-- ftd.column post:
+caption title:
+body body:
+optional string sub-title:
+optional string author-image:
+optional string author-image-link:
+optional string author-name: 
+optional string author-profile: 
+optional string author-email: 
+optional string timestamp-caption: Published on
+optional string timestamp: 15th Dec 2021
+optional string link: http://www.post.com
+optional string src: ./static/default-post.png
+optional string paragraph:
+optional string list:
+optional string h2:
+optional string image:
+optional string code:
+optional string width:
+optional string height:
+
+--- post-desktop:
+if: not $fpm-ui.mobile
+title: $title
+sub-title: $sub-title
+author-image: $author-image
+author-image-link: $author-image-link
+author-name: $author-name 
+author-profile: $author-profile 
+author-email: $author-email
+body: $body
+timestamp-caption: $timestamp-caption
+timestamp: $timestamp
+link: $link
+src: $src
+paragraph: $paragraph
+list: $list
+h2: $h2
+image: $image
+code: $code
+width: $width
+height: $height
+
+--- post-mobile:
+if: $fpm-ui.mobile
+title: $title
+sub-title: $sub-title
+author-image: $author-image 
+author-image-link: $author-image-link
+author-name: $author-name 
+author-profile: $author-profile 
+author-email: $author-email
+body: $body
+timestamp-caption: $timestamp-caption
+timestamp: $timestamp
+link: $link
+src: $src
+paragraph: $paragraph
+list: $list
+h2: $h2
+image: $image
+code: $code
+width: $width
+height: $height
+
+
+
+
+-- ftd.column post-image:
+spacing: 10
+min-width: 350
+min-width if $fpm-ui.mobile: 300
+/spacing if not $fpm-ui.mobile: 10
+
+-- ftd.image post-thumbnail:
+optional string link:
+string src:
+src: $src
+link: $link
+optional string width:
+width: $width
+width if $fpm-ui.mobile: 300
+optional string height:
+height: $height
+align: left
+
+-- ftd.text timestamp-caption: $title
+caption title:
+color if $fpm-ui.dark-mode: #969696
+color: #8A8A8A
+size: 24
+size if $fpm-ui.mobile: 12
+line-height: 28
+/line-height if $fpm-ui.mobile: 14
+font: Itim
+padding-top if not $fpm-ui.mobile: 15
+
+-- ftd.text timestamp: $title
+caption title:
+color if $fpm-ui.dark-mode: #FFFFFF
+color: #000000
+size: 30
+size if $fpm-ui.mobile: 12
+line-height: 36
+/line-height if $fpm-ui.mobile: 14
+align: left
+font: Itim
+
+-- ftd.column post-details:
+width: fill
+
+
+-- ftd.text post-title: $title
+caption title:
+optional string link: 
+link: $link
+color if $fpm-ui.dark-mode: #E9E9E9
+color: #000000
+size: 66
+size if $fpm-ui.mobile: 26
+line-height: 79
+/line-height if $fpm-ui.mobile: 26
+align: left
+font: Itim
+padding-bottom: 25
+
+-- ftd.text post-title-large: $title
+caption title:
+optional string link: 
+link: $link
+color if $fpm-ui.dark-mode: #E9E9E9
+color: #000000
+size: 88
+size if $fpm-ui.mobile: 24
+line-height: 105
+/line-height if $fpm-ui.mobile: 28
+align: left
+font: Itim
+padding-bottom: 25
+
+
+-- ftd.text post-sub-title: $title
+optional caption title:
+optional string link: 
+link: $link
+color if $fpm-ui.dark-mode: #969696
+color: #929292
+size: 40
+size if $fpm-ui.mobile: 14
+line-height: 48
+/line-height if $fpm-ui.mobile: 16
+align: left
+font: Itim
+padding-bottom: 25
+
+
+-- ftd.row author-photo:
+id: author-info
+string image-src: 
+optional string image-link:
+width: fill
+spacing: 20
+
+--- ftd.column:
+
+--- ftd.image:
+string src:
+optional string link:
+src: $image-src
+link: $image-link
+width: 112
+height: 112
+
+
+-- ftd.column author-details:
+string author-name: 
+string author-profile: 
+string author-email: 
+
+
+--- ftd.text: $author-name
+
+--- ftd.text: $author-profile
+
+--- ftd.text: $author-email
+
+
+-- ftd.text post-intro: 
+body body:
+optional string link: 
+link: $link
+color if $fpm-ui.dark-mode: #969696
+color: #000000
+size: 36
+size if $fpm-ui.mobile: 15
+line-height: 43
+/line-height if $fpm-ui.mobile: 18
+align: left
+font: Itim
+
+$body
+
+
+-- ftd.row seperator:
+background-color if $fpm-ui.dark-mode: #212121
+background-color: \#F6F6F6
+width: percent 100
+padding-top: 20
+padding-bottom: 20
+padding-left: 150
+padding-right: 150
+
+-- ftd.image seperator-image:
+string src:
+src: $src
+optional string width:
+width: $width
+optional string height:
+height: $height
+align: center
+padding-top: 40
+padding-top if $fpm-ui.mobile: 30
