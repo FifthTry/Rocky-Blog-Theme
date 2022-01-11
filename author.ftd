@@ -1,0 +1,103 @@
+-- import: fpm-ui
+
+-- ftd.row author:
+caption title:
+body body:
+string src:
+string width: 180
+string height: 180
+string link:
+string email:
+width: fill
+background-color if $fpm-ui.dark-mode: #313131 
+background-color: \#E7E7E7
+padding-left: 150
+padding-left if $fpm-ui.mobile: 30
+padding-right: 150
+padding-right if $fpm-ui.mobile: 30
+padding-top: 50
+padding-top if $fpm-ui.mobile: 15
+padding-bottom: 50
+padding-bottom if $fpm-ui.mobile: 15
+
+--- author-section-left:
+
+--- author-title: $title
+
+--- author-bio: 
+
+$body
+
+--- container: ftd.main
+
+
+--- author-section-right:
+
+--- author-photo:
+link: $link
+src: $src
+width: $width
+height: $height
+
+--- author-email: $email
+
+
+-- ftd.column author-section-left:
+width: percent 80
+
+-- ftd.text author-title: $title
+caption title:
+optional string link: 
+link: $link
+color if $fpm-ui.dark-mode: #E9E9E9 
+color: #000000
+size: 56
+size if $fpm-ui.mobile: 28
+line-height: 67
+/line-height if $fpm-ui.mobile: 34
+align: left
+font: Itim
+
+-- ftd.text author-bio: 
+body body:
+optional string link: 
+link: $link
+color if $fpm-ui.dark-mode: #969696 
+color: #000000
+size: 36
+size if $fpm-ui.mobile: 14
+line-height: 43
+/line-height if $fpm-ui.mobile: 16
+align: left
+font: Itim
+
+$body
+
+-- ftd.column author-section-right:
+width: percent 20
+width if $fpm-ui.mobile: 140
+spacing: 10
+
+-- ftd.image author-photo:
+optional string link:
+string src:
+src: $src
+link: $link
+optional string width:
+width: $width
+optional string height:
+width if $fpm-ui.mobile: 140
+height: $height
+align: center
+align if $fpm-ui.mobile: right
+border-radius: 500
+
+-- ftd.text author-email: $title
+if: not $fpm-ui.mobile
+caption title:
+color if $fpm-ui.dark-mode: #BFBFBF
+color: #000000
+size: 24
+line-height: 28
+align: center
+font: Itim

@@ -2,72 +2,32 @@
 
 -- import: fpm-ui
 
+-- import: header as head
 
--- lib.main-wrapper:
-id: main
+-- import: author as auth
 
 -- docs.dark-mode-switcher:
 
 
--- lib.header-container:
-id:header
-
--- lib.header-left:
-
---- lib.nav-logo:
-src: ./static/logo.png
-link: https://www.fifthtry.com
-
---- lib.site-title: Fifthtry
-url: https://www.fifthtry.com
-
--- container: header
-
--- lib.header-right:
-
---- lib.nav-link: Follow us on
-
---- lib.nav-icon:
-src: ./static/twitter.png
-link: https://www.twitter.com/fifthtry
-width: 31
-height: 27
-
---- lib.nav-icon:
-src: ./static/facebook.png
-link: https://www.facebook.com/fifthtry
-width: 15
-height: 32
-
---- lib.nav-icon:
-src: ./static/linkedin.png
-link: https://www.linkedin.com/fifthtry
-width: 31
-height: 30
-
---- lib.nav-icon:
-src: ./static/instagram.png
-link: https://www.instagram.com/fifthtry
-width: 31
-height: 30
-
---- lib.nav-icon:
-src: ./static/redit.png
-link: https://www.redit.com/fifthtry
-width: 37
-height: 30
+-- head.header:
+logo: ./static/logo.png
+site-link: https://www.fifthtry.com  
+site-name: Fifthtry
+nav-info: Follow us on
+twitter-link: https://www.twitter.com/fifthtry
+facebook-link: https://www.facebook.com/fifthtry
+linkedin-link: https://www.linkedin.com/fifthtry
+instagram-link: https://www.instagram.com/fifthtry
+redit-link: https://www.redit.com/fifthtry
 
 
--- container: main
-
--- lib.author: Hi, I am Amit Upadhyay
+-- auth.author: Hi, I am Amit Upadhyay
 src: ./static/author-default.png
 email: amitu@fifthtry.com
-link: aaa
+link: /post/1
 
 I'm a web/software developer who loves to build projects and share valuable ps for new programmers on this blog.
 
--- container: main
 
 -- lib.post: The fundamentals of understanding color theory
 timestamp: 15th Dec 2021

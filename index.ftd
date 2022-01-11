@@ -1,5 +1,7 @@
 -- import: docs as docs
 -- import: fpm-ui
+-- import: header as head
+-- import: author as auth
 
 -- ftd.column:
 width: fill
@@ -13,7 +15,6 @@ background-color: #f6f6f6
 -- docs.theme: fifthtry.github.io/Rocky-theme
 
 -- docs.dark-mode-switcher:
-
 
 
 -- docs.markdown:
@@ -42,7 +43,7 @@ link: https://www.fifthtry.com
 
 -- docs.output:
 
---- nav-logo:
+--- head.nav-logo:
 src: https://i.imgur.com/aijdJIB.png
 link: https://www.fifthtry.com
 
@@ -60,7 +61,7 @@ lang: ftd
 
 -- docs.output:
 
---- site-title: fifthtry
+--- head.site-title: fifthtry
 
 
 -- docs.component-argument: url
@@ -77,7 +78,7 @@ url: https://www.fifthtry.com
 
 -- docs.output:
 
---- site-title: fifthtry
+--- head.site-title: fifthtry
 url: https://www.fifthtry.com
 
 
@@ -94,7 +95,7 @@ lang: ftd
 
 -- docs.output:
 
---- nav-link: Follow us on
+--- head.nav-link: Follow us on
 
 
 
@@ -112,7 +113,7 @@ link: https://www.fifthtry.com
 
 -- docs.output:
 
---- nav-link: Follow us on
+--- head.nav-link: Follow us on
 link: https://www.fifthtry.com
 
 
@@ -132,7 +133,7 @@ link: https://www.twitter.com/fifthtry
 
 -- docs.output:
 
---- nav-icon:
+--- head.nav-icon:
 src: static/twitter.png
 link: https://www.twitter.com/fifthtry
 width: auto
@@ -147,7 +148,7 @@ These arguments are optional and can be used as and when required to adjust soci
 -- docs.code: with optional argument 'width' & 'height'
 lang: ftd
 
-\-- nav-icon:
+\-- head.nav-icon:
 src: static/twitter.png
 link: https://www.twitter.com/fifthtry
 width: 31
@@ -155,7 +156,7 @@ height: 27
 
 -- docs.output:
 
---- nav-icon:
+--- head.nav-icon:
 src: static/twitter.png
 link: https://www.twitter.com/fifthtry
 width: 31
@@ -176,7 +177,7 @@ lang: ftd
 
 -- docs.output:
 
---- author-title: John Cartor
+--- auth.author-title: John Cartor
 
 
 
@@ -194,7 +195,7 @@ link: http://www.fifthtry.com
 
 -- docs.output:
 
---- author-title: John Cartor
+--- auth.author-title: John Cartor
 link: http://www.fifthtry.com
 
 
@@ -213,7 +214,7 @@ lang: ftd
 
 -- docs.output:
 
---- author-bio: 
+--- auth.author-bio: 
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
@@ -233,7 +234,7 @@ link: http://www.fifthtry.com
 
 -- docs.output:
 
---- author-bio: 
+--- auth.author-bio: 
 link: http://www.fifthtry.com
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
@@ -255,7 +256,7 @@ link: https://www.fifthtry.com/
 
 -- docs.output:
 
---- author-photo:
+--- auth.author-photo:
 src: static/author-default.png
 link: https://www.fifthtry.com/
 width: 180
@@ -280,7 +281,7 @@ height: 180
 
 -- docs.output:
 
---- author-photo:
+--- auth.author-photo:
 src: static/author-default.png
 link: https://www.fifthtry.com/
 width: 180
@@ -300,7 +301,7 @@ lang: ftd
 
 -- docs.output:
 
---- author-email: johncartor@firthtry.com
+--- auth.author-email: johncartor@firthtry.com
 
 
 
@@ -492,176 +493,10 @@ width: fill
 
 
 
--- ftd.column main-wrapper:
-width: fill
 
--- ftd.row header-container:
-width: fill
-background-color if $fpm-ui.dark-mode: #151515 
-background-color: \#ffffff
-padding-left: 150
-padding-left if $fpm-ui.mobile: 30
-padding-right: 150
-padding-right if $fpm-ui.mobile: 30
-padding-top: 30
-padding-top if $fpm-ui.mobile: 15
-padding-bottom: 30
-padding-bottom if $fpm-ui.mobile: 15
-
--- ftd.row header-left:
-width: fill
-align: left
-
--- ftd.image nav-logo:
-string src:
-string link:
-src: $src
-link: $link
-width: auto
-width if $fpm-ui.mobile: 36
-height if $fpm-ui.mobile: 36
-align: left
-
--- ftd.text site-title: $title
-caption title:
-optional string url:
-link: $url
-color if $fpm-ui.dark-mode: #E4E4E4 
-color: #000000
-size if $fpm-ui.mobile: 21
-size: 48
-align: left
-font: Itim
-padding-left: 20
-
--- ftd.row header-right:
-if: not $fpm-ui.mobile
-min-width: 350
-align: right
-spacing: 20
-
-
--- ftd.text nav-link: $title
-caption title:
-optional string link: 
-link: $link
-color if $fpm-ui.dark-mode: #676767 
-color: #7B7B7B
-size: 20
-align: center
-font: Itim
-
--- ftd.image nav-icon:
-string link:
-string src:
-src: $src
-link: $link
-optional string width: auto
-width: $width
-optional string height: auto
-height: $height
-align: center
-
-
--- ftd.row author:
-caption title:
-body body:
-string src:
-string width: 180
-string height: 180
-string link:
-string email:
-width: fill
-background-color if $fpm-ui.dark-mode: #313131 
-background-color: \#E7E7E7
-padding-left: 150
-padding-left if $fpm-ui.mobile: 30
-padding-right: 150
-padding-right if $fpm-ui.mobile: 30
-padding-top: 50
-padding-top if $fpm-ui.mobile: 15
-padding-bottom: 50
-padding-bottom if $fpm-ui.mobile: 15
-
---- author-section-left:
-
---- author-title: $title
-
---- author-bio: 
-
-$body
-
---- author-section-right:
-
---- author-photo:
-link: $link
-src: $src
-width: $width
-height: $height
-
---- author-email: $email
-
-
-
--- ftd.column author-section-left:
-width: fill
-
--- ftd.text author-title: $title
-caption title:
-optional string link: 
-link: $link
-color if $fpm-ui.dark-mode: #E9E9E9 
-color: #000000
-size: 56
-size if $fpm-ui.mobile: 28
-line-height: 67
-/line-height if $fpm-ui.mobile: 34
-align: left
-font: Itim
-
--- ftd.text author-bio: 
-body body:
-optional string link: 
-link: $link
-color if $fpm-ui.dark-mode: #969696 
-color: #000000
-size: 36
-size if $fpm-ui.mobile: 14
-line-height: 43
-/line-height if $fpm-ui.mobile: 16
-align: left
-font: Itim
-
-$body
-
--- ftd.column author-section-right:
-min-width: 200
-spacing: 10
-
--- ftd.image author-photo:
-optional string link:
-string src:
-src: $src
-link: $link
-optional string width:
-width: $width
-optional string height:
-width if $fpm-ui.mobile: 140
-height: $height
-align: right
-border-radius: 500
-
--- ftd.text author-email: $title
-if: not $fpm-ui.mobile
-caption title:
-color if $fpm-ui.dark-mode: #BFBFBF
-color: #000000
-size: 24
-line-height: 28
-align: left
-font: Itim
 
 -- ftd.row post-desktop:
+id: post-main
 caption title:
 body body:
 string timestamp-caption:
@@ -678,7 +513,6 @@ padding-left: 150
 padding-right: 150
 padding-top: 50
 padding-bottom: 50
-
 
 --- timestamp-caption: $timestamp-caption
 if: $fpm-ui.mobile
@@ -700,6 +534,8 @@ if: not $fpm-ui.mobile
 --- timestamp: $timestamp
 if: not $fpm-ui.mobile
 
+--- container: ftd.main
+
 --- post-details:
 
 --- post-title: $title
@@ -707,6 +543,11 @@ if: not $fpm-ui.mobile
 --- post-intro: 
 
 $body
+
+
+--- seperator-image:
+src: ./static/post-seperator.png
+width: fill
 
 
 -- ftd.column post-mobile:
@@ -762,7 +603,7 @@ src: ./static/post-seperator.png
 width: fill
 
 
--- ftd.column post: 
+-- ftd.column post:
 caption title:
 body body:
 string timestamp-caption: Published on
@@ -796,6 +637,8 @@ height: $height
 
 -- ftd.column post-image:
 spacing: 10
+min-width: 350
+min-width if $fpm-ui.mobile: 300
 /spacing if not $fpm-ui.mobile: 10
 
 -- ftd.image post-thumbnail:
@@ -833,6 +676,7 @@ align: left
 font: Itim
 
 -- ftd.column post-details:
+width: fill
 
 
 -- ftd.text post-title: $title
@@ -868,7 +712,7 @@ $body
 -- ftd.row seperator:
 background-color if $fpm-ui.dark-mode: #212121
 background-color: \#F6F6F6
-width: fill
+width: percent 100
 padding-top: 20
 padding-bottom: 20
 padding-left: 150
@@ -884,6 +728,7 @@ height: $height
 align: center
 padding-top: 40
 padding-top if $fpm-ui.mobile: 30
+
 
 -- ftd.column footer:
 caption title:
