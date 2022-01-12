@@ -39,31 +39,31 @@ url: $site-link
 --- nav-link: $nav-info
 
 --- nav-icon:
-src: ./static/twitter.png
+src: /static/twitter.png
 link: $twitter-link
 width: 31
 height: 27
 
 --- nav-icon:
-src: ./static/facebook.png
+src: /static/facebook.png
 link: $facebook-link
 width: 15
 height: 32
 
 --- nav-icon:
-src: ./static/linkedin.png
+src: /static/linkedin.png
 link: $linkedin-link
 width: 31
 height: 30
 
 --- nav-icon:
-src: ./static/instagram.png
+src: /static/instagram.png
 link: $instagram-link
 width: 31
 height: 30
 
 --- nav-icon:
-src: ./static/redit.png
+src: /static/redit.png
 link: $redit-link
 width: 37
 height: 30
