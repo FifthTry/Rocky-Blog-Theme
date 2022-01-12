@@ -161,6 +161,10 @@ caption: Published on
 timestamp: $timestamp
 
 
+--- container: ftd.main
+
+--- post-image-main:
+post-image: $src
 
 
 
@@ -482,6 +486,30 @@ align: right
 text-align: right
 align: right
 text-align: right
+
+
+-- ftd.column post-image-main:
+optional string post-image:
+width: fill
+
+--- ftd.image:
+string src:  
+src: $post-image
+width: fill
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
