@@ -2,7 +2,7 @@
 -- import: index
 
 
--- ftd.row post-item-desktop:
+-- ftd.row post-summary-desktop:
 caption title:
 body body:
 string timestamp-caption:
@@ -58,7 +58,7 @@ src: static/post-seperator.png
 width: fill
 
 
--- ftd.column post-item-mobile:
+-- ftd.column post-summary-mobile:
 caption title:
 body body:
 string timestamp-caption: 
@@ -175,6 +175,7 @@ post-image: $src
 id: content
 width: fill
 
+
 --- index.footer: © 2022 FPM Blog - Latest FPM News & Updates
 
 
@@ -216,7 +217,7 @@ padding-bottom: 50
 
 
 
--- ftd.column post-item:
+-- ftd.column post-summary:
 caption title:
 body body:
 string timestamp-caption: Published on
@@ -226,7 +227,7 @@ string src: static/default-post.png
 string width: 330
 string height: 170
 
---- post-item-desktop:
+--- post-summary-desktop:
 if: not $fpm-ui.mobile
 title: $title
 body: $body
@@ -237,7 +238,7 @@ src: $src
 width: $width
 height: $height
 
---- post-item-mobile:
+--- post-summary-mobile:
 if: $fpm-ui.mobile
 title: $title
 body: $body

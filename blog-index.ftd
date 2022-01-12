@@ -29,8 +29,7 @@ link: /post/1
 
 I'm a web/software developer who loves to build projects and share valuable ps for new programmers on this blog.
 
-/replace post-item with post-summary
--- post.post-item: The fundamentals of understanding color theory
+-- post.post-summary: The fundamentals of understanding color theory
 timestamp: 15th Dec 2021
 link: http://www.post.com
 src: static/default-post.png
@@ -38,7 +37,7 @@ src: static/default-post.png
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 
--- post.post-item: The fundamentals of understanding color theory
+-- post.post-summary: The fundamentals of understanding color theory
 timestamp: 15th Dec 2021
 link: http://www.post.com
 src: static/default-post.png

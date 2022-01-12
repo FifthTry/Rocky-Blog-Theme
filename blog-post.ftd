@@ -4,11 +4,16 @@
 
 
 -- post.post: W8 Mind-blowing TikTok Marketing Examples to Inspire Your Next Campaign
+id: post
 sub-title: TikTok has taken social media marketing by storm. The platform allows users to
 timestamp: 15th Dec 2021
 src: static/post-image.jpg
 
--- ftd.text:
+--- ftd.column:
+width: fill
+
+--- ftd.text:
+size: 34
 
 TikTok has taken social media marketing by storm. The platform allows users to make short, looping videos with special effects and musical overlays. From big brands to small businesses, inspiring TikTok marketing examples can be found all over the platform.
 
