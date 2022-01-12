@@ -34,7 +34,7 @@ jobs:
         id: build_tld
         run: |
           rm -rf .build
-          fpm build --base=/Rocky-Blog-Theme/
+          fpm build --base=/
       - uses: actions/upload-artifact@master
         with:
           name: TLD_BUILD
