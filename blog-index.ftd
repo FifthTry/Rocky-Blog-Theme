@@ -11,7 +11,7 @@
 
 
 -- head.header:
-logo: /static/logo.png
+logo: static/logo.png
 site-link: https://www.fifthtry.com  
 site-name: Fifthtry
 nav-info: Follow us on
@@ -23,7 +23,7 @@ redit-link: https://www.redit.com/fifthtry
 
 
 -- auth.author: Hi, I am John Cartor
-src: /static/author-default.png
+src: static/author-default.png
 email: John.Cartor@fifthtry.com
 link: /post/1
 
@@ -33,7 +33,7 @@ I'm a web/software developer who loves to build projects and share valuable ps f
 -- post.post-item: The fundamentals of understanding color theory
 timestamp: 15th Dec 2021
 link: http://www.post.com
-src: /static/default-post.png
+src: static/default-post.png
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
@@ -41,7 +41,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 -- post.post-item: The fundamentals of understanding color theory
 timestamp: 15th Dec 2021
 link: http://www.post.com
-src: /static/default-post.png
+src: static/default-post.png
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 

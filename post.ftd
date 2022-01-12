@@ -54,7 +54,7 @@ $body
 
 
 --- seperator-image:
-src: /static/post-seperator.png
+src: static/post-seperator.png
 width: fill
 
 
@@ -107,7 +107,7 @@ if: not $fpm-ui.mobile
 $body
 
 --- seperator-image:
-src: /static/post-seperator.png
+src: static/post-seperator.png
 width: fill
 
 
@@ -222,7 +222,7 @@ body body:
 string timestamp-caption: Published on
 string timestamp: 15th Dec 2021
 string link: http://www.post.com
-string src: /static/default-post.png
+string src: static/default-post.png
 string width: 330
 string height: 170
 
@@ -264,7 +264,7 @@ string author-email: $index.author-email
 optional string timestamp-caption: Published on
 optional string timestamp: 15th Dec 2021
 optional string link: http://www.post.com
-optional string src: /static/default-post.png
+optional string src: static/default-post.png
 optional string paragraph:
 optional string list:
 optional string h2:
