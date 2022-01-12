@@ -4,7 +4,8 @@
 
 -- import: author as auth
 
--- import: post as post
+-- import: post
+
 
 -- docs.dark-mode-switcher:
 
@@ -28,7 +29,7 @@ link: /post/1
 
 I'm a web/software developer who loves to build projects and share valuable ps for new programmers on this blog.
 
-
+/replace post-item with post-summary
 -- post.post-item: The fundamentals of understanding color theory
 timestamp: 15th Dec 2021
 link: http://www.post.com
@@ -46,25 +47,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 
 
-
-
-
--- post.post: W8 Mind-blowing TikTok Marketing Examples to Inspire Your Next Campaign
-sub-title: TikTok has taken social media marketing by storm. The platform allows users to
-author-image: ./static/author-default.png
-author-image-link: http://google.com
-author-name: John Cartor
-author-profile: Web Developer
-author-email: john.cartor@fifthtry.com
-timestamp: 15th Dec 2021
-src: ./static/post-image.jpg
-
-
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-
--- lib.footer: © 2022 FPM Blog - Latest FPM News & Updates
 
 
 

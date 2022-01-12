@@ -1,4 +1,7 @@
 -- import: fpm-ui
+-- import: index
+
+
 -- ftd.row post-item-desktop:
 caption title:
 body body:
@@ -110,14 +113,14 @@ width: fill
 
 
 -- ftd.column post-desktop:
+open: content
 caption title:
-body body:
 optional string sub-title:
-optional string author-image:
-optional string author-image-link:
-optional string author-name:  
-optional string author-profile:  
-optional string author-email: 
+string author-image: 
+string author-image-link:
+string author-name:
+string author-profile:
+string author-email:
 optional string timestamp-caption: 
 optional string timestamp: 
 optional string link: 
@@ -166,19 +169,25 @@ timestamp: $timestamp
 --- post-image-main:
 post-image: $src
 
+--- container: ftd.main
+
+--- ftd.column:
+id: content
+width: fill
+
+--- index.footer: © 2022 FPM Blog - Latest FPM News & Updates
 
 
 
 
 -- ftd.column post-mobile:
 caption title:
-body body:
 optional string sub-title:
-optional string author-image:
-optional string author-image-link:
-optional string author-name:  
-optional string author-profile:  
-optional string author-email: 
+string author-image: 
+string author-image-link:
+string author-name:
+string author-profile:
+string author-email:
 optional string timestamp-caption: 
 optional string timestamp: 
 optional string link: 
@@ -202,6 +211,7 @@ padding-bottom: 50
 --- post-title-large: $title
 
 --- post-sub-title: $sub-title
+
 
 
 
@@ -243,14 +253,14 @@ height: $height
 
 
 -- ftd.column post:
+open: main
 caption title:
-body body:
 optional string sub-title:
-optional string author-image:
-optional string author-image-link:
-optional string author-name: 
-optional string author-profile: 
-optional string author-email: 
+string author-image: $index.author-image
+string author-image-link: $index.author-image-link
+string author-name: $index.author-name 
+string author-profile: $index.author-profile 
+string author-email: $index.author-email
 optional string timestamp-caption: Published on
 optional string timestamp: 15th Dec 2021
 optional string link: http://www.post.com
@@ -264,6 +274,7 @@ optional string width:
 optional string height:
 
 --- post-desktop:
+id: main
 if: not $fpm-ui.mobile
 title: $title
 sub-title: $sub-title
@@ -272,7 +283,6 @@ author-image-link: $author-image-link
 author-name: $author-name 
 author-profile: $author-profile 
 author-email: $author-email
-body: $body
 timestamp-caption: $timestamp-caption
 timestamp: $timestamp
 link: $link
@@ -286,6 +296,7 @@ width: $width
 height: $height
 
 --- post-mobile:
+id: main
 if: $fpm-ui.mobile
 title: $title
 sub-title: $sub-title
@@ -294,7 +305,6 @@ author-image-link: $author-image-link
 author-name: $author-name 
 author-profile: $author-profile 
 author-email: $author-email
-body: $body
 timestamp-caption: $timestamp-caption
 timestamp: $timestamp
 link: $link
@@ -401,7 +411,7 @@ padding-bottom: 25
 -- ftd.row author-photo:
 id: author-info
 string image-src: 
-optional string image-link:
+string image-link:
 width: fill
 spacing: 20
 
@@ -409,7 +419,7 @@ spacing: 20
 
 --- ftd.image:
 string src:
-optional string link:
+string link:
 src: $image-src
 link: $image-link
 width: 112

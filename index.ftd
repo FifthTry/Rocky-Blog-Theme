@@ -3,6 +3,17 @@
 -- import: header as head
 -- import: author as auth
 
+
+/below global variables will go in config.ftd 
+
+-- string author-image: ./static/author-default.png
+-- string author-image-link: http://fifthtry.com
+-- string author-name:  John Cartor
+-- string author-profile: Web Developer
+-- string author-email: john.cartor@fifthtry.com
+
+
+
 -- ftd.column:
 width: fill
 padding-left: 150
