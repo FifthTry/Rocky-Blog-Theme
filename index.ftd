@@ -11,6 +11,14 @@
 -- string author-name:  John Cartor
 -- string author-profile: Web Developer
 -- string author-email: john.cartor@fifthtry.com
+-- string neutral: #fff
+-- string neutral-200: #e5e5e5
+-- string neutral-300: #F9F9F9
+-- string neutral-400: #E1E1E1
+-- string neutral-500: #323546
+-- string neutral-600: #3E4155
+-- string neutral-700: #18191a
+-- string neutral-800: #000
 
 
 

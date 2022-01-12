@@ -1,0 +1,245 @@
+-- import: fpm-ui
+-- import: index
+
+-- ftd.column image:
+string src:
+optional caption caption:
+optional body body:
+optional string link:
+optional string align:
+optional string width:
+optional string height:
+width: fill
+height: fill
+padding-bottom: 20
+
+--- ftd.image:
+src: $src
+padding-bottom: 15
+width: $width
+height: $height
+align: $align
+
+--- ftd.text:
+if: $caption is not null
+text: $caption
+color: $index.neutral-800
+color if $fpm-ui.dark-mode: $index.neutral
+align: center
+width: fill
+size: 17
+style: italic
+font: Open sans
+
+--- markdown:
+if: $body is not null
+body: $body
+
+-- ftd.iframe iframe:
+string src:
+src: $src
+height: 400
+width: fill
+margin-bottom: 34
+
+
+-- ftd.iframe youtube:
+string id:
+youtube: $id
+height: 400
+width: fill
+margin-bottom: 34
+
+-- ftd.column h1:
+caption title:
+optional body body:
+width: fill
+region: h1
+padding-bottom: 12
+
+--- ftd.text:
+caption $title:
+text: $title
+region: title
+size: 30
+line-height: 40
+color: $index.neutral-800
+color if $fpm-ui.dark-mode: $index.neutral
+style: bold
+padding-bottom: 8
+padding-top: 16
+font: apple-system
+
+--- markdown:
+if: $body is not null
+body: $body
+
+
+-- ftd.column h2:
+caption title:
+optional body body:
+width: fill
+region: h2
+padding-bottom: 12
+
+--- ftd.text:
+caption $title:
+text: $title
+region: title
+size: 26
+line-height: 32
+color: $index.neutral-800
+color if $fpm-ui.dark-mode: $index.neutral
+style: bold
+padding-bottom: 8
+padding-top: 16
+font: apple-system
+
+--- markdown:
+if: $body is not null
+body: $body
+
+
+-- ftd.column h3:
+caption title:
+optional body body:
+width: fill
+region: h3
+padding-bottom: 12
+
+--- ftd.text:
+caption $title:
+text: $title
+region: title
+size: 21
+line-height: 30
+color: $index.neutral-800
+color if $fpm-ui.dark-mode: $index.neutral
+style: bold
+padding-bottom: 8
+padding-top: 16
+font: apple-system
+
+
+--- markdown:
+if: $body is not null
+body: $body
+
+
+-- ftd.column h4:
+caption title:
+optional body body:
+width: fill
+region: h4
+
+--- ftd.text:
+caption $title:
+text: $title
+region: title
+size: 18
+line-height: 24
+color: $index.neutral-800
+color if $fpm-ui.dark-mode: $index.neutral
+style: bold
+padding-bottom: 12
+padding-top: 34
+font: apple-system
+
+--- markdown:
+if: $body is not null
+body: $body
+
+-- ftd.column h5:
+caption title:
+optional body body:
+width: fill
+region: h5
+
+--- ftd.text:
+caption $title:
+text: $title
+region: title
+size: 16
+line-height: 22
+color: $index.neutral-800
+color if $fpm-ui.dark-mode: $index.neutral
+style: bold
+padding-bottom: 12
+padding-top: 34
+font: apple-system
+
+--- markdown:
+if: $body is not null
+body: $body
+
+
+
+-- ftd.column code:
+optional caption caption:
+body body:
+string lang:
+optional string $filename:
+optional string $full:
+padding-bottom: 12
+padding-top: 12
+width: fill
+
+--- ftd.text:
+text: $caption
+if: $caption is not null
+color: #DCDCDC
+width: fill
+size: 14
+background-color: #3a404e
+padding-top: 10
+padding-bottom: 10
+padding-left: 20
+padding-right: 20
+border-top-radius: 4
+font: Open sans
+
+--- ftd.code:
+if: $caption is not null
+text: $body
+lang: $lang
+color: #4D4D4D
+width: fill
+size: 17
+line-height: 25
+padding-top: 10
+padding-left: 20
+padding-bottom: 10
+padding-right: 20
+background-color: #2b303b
+border-bottom-radius: 4
+overflow-x: auto
+
+--- ftd.code:
+if: $caption is null
+text: $body
+lang: $lang
+color: #4D4D4D
+width: fill
+size: 17
+line-height: 25
+padding-top: 10
+padding-left: 20
+padding-bottom: 10
+padding-right: 20
+background-color: #2b303b
+border-bottom-radius: 4
+border-top-radius: 4
+overflow-x: auto
+
+-- ftd.text markdown:
+body body:
+optional boolean collapsed:
+optional caption title:
+optional boolean two_columns:
+text: $body
+size: 15
+line-height: 24
+color: $index.neutral-700
+color if $fpm-ui.dark-mode: $index.neutral-200
+padding-bottom: 8
+font: apple-system
