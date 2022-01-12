@@ -34,7 +34,7 @@ This is library created for light blog theme. Github URL: {url}.
 
 
 Sample Pages:
-- [blog-index](./blog-index/index.html)
+- [blog-index](.build/blog-index/index.html)
 
 -- ftd.text url: sometext here
 color: yellow
