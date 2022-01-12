@@ -115,9 +115,9 @@ body body:
 optional string sub-title:
 optional string author-image:
 optional string author-image-link:
-optional author-name: $author-name 
-optional author-profile: $author-profile 
-optional author-email: $author-email
+optional string author-name:  
+optional string author-profile:  
+optional string author-email: 
 optional string timestamp-caption: 
 optional string timestamp: 
 optional string link: 
@@ -149,24 +149,16 @@ image-link: $author-image-link
 --- container: author-info
 
 --- author-details:
-author-name: $author-name
-author-profile: $author-profile
-author-email: $author-email
+name: $author-name
+profile: $author-profile
+email: $author-email
 
 
 --- container: author-info
 
---- ftd.column:
-width: fill
-align: right
-
---- ftd.text: Published on
-align: right
-text-align: right
-
---- ftd.text: 15th Dec 2021
-align: right
-text-align: right
+--- timestamp-info:
+caption: Published on
+timestamp: $timestamp
 
 
 
@@ -180,9 +172,9 @@ body body:
 optional string sub-title:
 optional string author-image:
 optional string author-image-link:
-optional author-name: $author-name 
-optional author-profile: $author-profile 
-optional author-email: $author-email
+optional string author-name:  
+optional string author-profile:  
+optional string author-email: 
 optional string timestamp-caption: 
 optional string timestamp: 
 optional string link: 
@@ -421,16 +413,76 @@ height: 112
 
 
 -- ftd.column author-details:
-string author-name: 
-string author-profile: 
-string author-email: 
+width: fill
+optional string name: 
+optional string profile: 
+optional string email: 
 
 
---- ftd.text: $author-name
+--- ftd.text: $name
+color if $fpm-ui.dark-mode: #E9E9E9
+color: #000000
+size: 38
+size if $fpm-ui.mobile: 12
+line-height: 46
+/line-height if $fpm-ui.mobile: 14
+align: left
+font: Itim
 
---- ftd.text: $author-profile
 
---- ftd.text: $author-email
+--- ftd.text: $profile
+color if $fpm-ui.dark-mode: #969696
+color: #5B5B5B
+size: 23
+size if $fpm-ui.mobile: 8
+line-height: 28
+/line-height if $fpm-ui.mobile: 10
+align: left
+font: Itim
+
+--- ftd.text: $email
+color if $fpm-ui.dark-mode: #0B7FEA
+color: #0B7FEA
+size: 23
+size if $fpm-ui.mobile: 8
+line-height: 28
+/line-height if $fpm-ui.mobile: 10
+align: left
+font: Itim
+
+
+-- ftd.column timestamp-info:
+optional string timestamp:
+optional string caption:
+width: fill
+align: right
+
+--- ftd.text: $caption
+color if $fpm-ui.dark-mode: #969696
+color: #626262
+size: 23
+size if $fpm-ui.mobile: 6
+line-height: 28
+/line-height if $fpm-ui.mobile: 8
+align: left
+font: Itim
+align: right
+text-align: right
+
+--- ftd.text: $timestamp
+color if $fpm-ui.dark-mode: #E9E9E9
+color: #000000
+size: 23
+size if $fpm-ui.mobile: 8
+line-height: 28
+/line-height if $fpm-ui.mobile: 10
+align: left
+font: Itim
+align: right
+text-align: right
+align: right
+text-align: right
+
 
 
 -- ftd.text post-intro: 
