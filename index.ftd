@@ -34,7 +34,7 @@ This is library created for light blog theme. Github URL: {url}.
 
 
 Sample Pages:
-- [blog-index](/Rocky-Blog-Theme/blog-index/index.html)
+- [blog-index](blog-index/)
 
 -- ftd.text url: sometext here
 color: yellow
