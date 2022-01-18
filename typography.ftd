@@ -1,6 +1,5 @@
+/-- Fonts: (Refer page no. 91 and )
 
-
-Fonts: (Refer page no. 91 and )
 -- string f0: 12
 -- string f1: 14
 -- string f2: 16
@@ -13,14 +12,25 @@ Fonts: (Refer page no. 91 and )
 -- string f9: 60
 -- string f10: 72
 
-Line-Height(Refer Page No. 106,  -- use always 1 for large fonts(f6-f10), for short paragraphs 1.5 and 2 for long paragraphs --> — use a taller line-height for small text and a shorter line-height for large text.)
+
+
+/-- Line-Height: (Refer Page No. 106)
+
+use always 1 for large fonts(f6-f10), for short paragraphs 1.5 and 2 for long 
+paragraphs --> — use a taller line-height for small text and a shorter 
+line-height for large text.)
+
 -- string lh0: 1
 -- string lh1: 1.5
 -- string lh2: 1.75
 -- string lh3: 2
 
 
-Weights: (Designers should never use font-weight lower than 400 - suggested in Refactoring UI(page-34) book)
+/-- Weights: 
+
+Designers should never use font-weight lower than 400 - suggested in 
+Refactoring UI(page-34) book
+
 -- string w0: 400
 -- string w1: 500
 -- string w2: 600
@@ -28,22 +38,28 @@ Weights: (Designers should never use font-weight lower than 400 - suggested in R
 -- string w4: 800
 -- string w5: 900
 
-Padding: (Refer page no. 82)
+
+
+/-- Padding: Refer page no. 82
+
 -- string p0: 6 8
 -- string p1: 8 10
 -- string p2: 12 16
 -- string p3: 15 30
 
-margin: (Refer page no. 82)
+
+/-- Margin: Refer page no. 82
+
 -- string m0: 6 8
 -- string m1: 8 10
 -- string m2: 12 16
 -- string m3: 15 30
 
 
-Colors: (Refer page no. 131-132)
+/-- Colors: Refer page no. 131-132
 
-Primary: RGB values
+/-- Primary: RGB values
+
 -- string p0: rgb(224 242 254)
 -- string p1: rgb(186 230 253);
 -- string p2: rgb(125 211 252);
@@ -54,8 +70,8 @@ Primary: RGB values
 -- string p7: rgb(7 89 133);
 -- string p8: rgb(12 74 110);
 
+/-- Hexadecimal:
 
-Hexadecimal:
 -- string p0: #e0f2fe;
 -- string p1: #bae6fd;
 -- string p2: #7dd3fc;
@@ -68,8 +84,9 @@ Hexadecimal:
 
 
 
-Neutral:
-RGB:
+/-- Neutral:
+
+/-- RGB:
 
 -- string n0: rgb(245 245 245); 
 -- string n1: rgb(229 229 229);
@@ -81,7 +98,7 @@ RGB:
 -- string n7: rgb(38 38 38);
 -- string n8: rgb(23 23 23);
 
-Hexadecimal:
+/-- Hexadecimal:
 
 -- string n0: #f6f6f6
 -- string n1: #e5e5e5
@@ -97,14 +114,16 @@ Hexadecimal:
 
 
 
-Box-Shadow: (Refer page no. 159 - 161)
+/-- Box-Shadow: Refer page no. 159 - 161
+
 -- string bs0: 0 1px 3px hsla(0, 0%, 0%, .2)
 -- string bs1: 0 4px 6px hsla(0, 0%, 0%, .1)
 -- string bs2: 0 5px 15px hsla(0, 0%, 0%, .2)
 -- string bs3: 0 10px 24px hsla(0, 0%, 0%, .2)
 -- string bs4: 0 15px 35px hsla(0, 0%, 0%, .2)
 
-Baground-Colors:
+/-- Baground-Colors:
+
 bg-black: rgb(0 0 0);
 bg-white: rgb(255 255 255);
 bg-grey-0: rgb(243 244 246);
@@ -116,6 +135,4 @@ bg-grey-5: rgb(75 85 99);
 bg-grey-6: rgb(55 65 81);
 bg-grey-7: rgb(31 41 55);
 bg-grey-8: rgb(17 24 39);
-
-
 
