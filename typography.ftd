@@ -124,15 +124,15 @@ Refactoring UI(page-34) book
 
 /-- Baground-Colors:
 
-bg-black: rgb(0 0 0);
-bg-white: rgb(255 255 255);
-bg-grey-0: rgb(243 244 246);
-bg-grey-1: rgb(229 231 235);
-bg-grey-2: rgb(209 213 219);
-bg-grey-3: rgb(156 163 175);
-bg-grey-4: rgb(107 114 128);
-bg-grey-5: rgb(75 85 99);
-bg-grey-6: rgb(55 65 81);
-bg-grey-7: rgb(31 41 55);
-bg-grey-8: rgb(17 24 39);
+-- string bg-black: rgb(0 0 0);
+-- string bg-white: rgb(255 255 255);
+-- string bg-grey-0: rgb(243 244 246);
+-- string bg-grey-1: rgb(229 231 235);
+-- string bg-grey-2: rgb(209 213 219);
+-- string bg-grey-3: rgb(156 163 175);
+-- string bg-grey-4: rgb(107 114 128);
+-- string bg-grey-5: rgb(75 85 99);
+-- string bg-grey-6: rgb(55 65 81);
+-- string bg-grey-7: rgb(31 41 55);
+-- string bg-grey-8: rgb(17 24 39);
 
