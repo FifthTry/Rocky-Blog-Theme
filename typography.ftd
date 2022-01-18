@@ -1,4 +1,18 @@
-/-- Fonts: (Refer page no. 91 and )
+/-- Typography:
+
+every web app, page Or an mobile application have its base font, color, bg-color
+and so on...
+we call it as typography of the project. We are following all suggestions from
+the book "Refractoring UI - by Adam Wathan & Steve Schoger". Hereafter we call
+it our 'bible'.
+
+
+
+/-- Fonts: Referring to page no. 91 - from bible 
+
+below are all base font sizes for all type of font families. Either we use
+Roboto OR any other font family. Apart from below font-size we wont use any
+other font-sizes.
 
 -- string f0: 12
 -- string f1: 14
@@ -14,11 +28,19 @@
 
 
 
-/-- Line-Height: (Refer Page No. 106)
+
+/-- Line-Height: Referring to page No. 106 - from bible
 
 use always 1 for large fonts(f6-f10), for short paragraphs 1.5 and 2 for long 
 paragraphs --> — use a taller line-height for small text and a shorter 
-line-height for large text.)
+line-height for large text.
+
+Apart from below line-height values, no values will be accepted in design. Below
+values are based on ratio of line-height
+
+e.g. 
+1. 12px font-size - line-height: 1 means - line height is 12px
+2. 12px font-size - line-height: 1.5 means - line height is 18px etc.
 
 -- string lh0: 1
 -- string lh1: 1.5
@@ -26,10 +48,12 @@ line-height for large text.)
 -- string lh3: 2
 
 
-/-- Weights: 
 
-Designers should never use font-weight lower than 400 - suggested in 
-Refactoring UI(page-34) book
+
+/-- Font-weight: Referring to page no. 34 - from bible
+
+Designers should never use font-weight lower than 400 - suggested in our bible.
+Below are the obly possible font-weght values we will be use. 
 
 -- string w0: 400
 -- string w1: 500
@@ -40,25 +64,55 @@ Refactoring UI(page-34) book
 
 
 
-/-- Padding: Refer page no. 82
+/-- Padding: Referring page no. 82 - from-bible and tailwindcss.com
+
+below padding values are standard padding values. Below padding values are 
+example of small, medium, large and extra large devices. Based on below ratio we
+continue using padding.
+
+p means - padding-top, right, bottom and left - all sides
+py means - padding top and padding bottom
+px means - padding left and padding right
+
+e.g.: padding: $py OR padding: $px OR padding: $p0
 
 -- string p0: 6 8
 -- string p1: 8 10
 -- string p2: 12 16
 -- string p3: 15 30
+-- string py: 15 0
+-- string px: 0 15
 
 
-/-- Margin: Refer page no. 82
+
+/-- Margin: Referring page no. 82 - from bible and tailwindcss.com
+
+below margin values are standard margin values. Below margin values are 
+example of small, medium, large and extra large devices. Based on below ratio we
+continue using margin.
+
+m means - margin-top, right, bottom and left - all sides
+my means - margin top and margin bottom
+mx means - margin left and margin right
+
+e.g.: margin: $py OR margin: $px OR margin: $p0
+
 
 -- string m0: 6 8
 -- string m1: 8 10
 -- string m2: 12 16
 -- string m3: 15 30
+-- string my: 15 0
+-- string mx: 0 15
 
 
-/-- Colors: Refer page no. 131-132
 
-/-- Primary: RGB values
+/-- Colors: Referring page no. 131-132 - from bible and tailwindcss.com
+
+We will keep using very minimal color shades while designing our themes. Below
+are most common and used color shades.
+
+/-- Primary Color Shades: RGB values
 
 -- string p0: rgb(224 242 254)
 -- string p1: rgb(186 230 253);
@@ -70,7 +124,8 @@ Refactoring UI(page-34) book
 -- string p7: rgb(7 89 133);
 -- string p8: rgb(12 74 110);
 
-/-- Hexadecimal:
+
+/-- Primary Color Shades: Hexadecimal values
 
 -- string p0: #e0f2fe;
 -- string p1: #bae6fd;
@@ -83,10 +138,7 @@ Refactoring UI(page-34) book
 -- string p8: rgb(12 74 110);
 
 
-
-/-- Neutral:
-
-/-- RGB:
+/-- Neutral Color Shades: RGB values
 
 -- string n0: rgb(245 245 245); 
 -- string n1: rgb(229 229 229);
@@ -98,7 +150,8 @@ Refactoring UI(page-34) book
 -- string n7: rgb(38 38 38);
 -- string n8: rgb(23 23 23);
 
-/-- Hexadecimal:
+
+/-- Neutral Color Shades: Hexadecimal values
 
 -- string n0: #f6f6f6
 -- string n1: #e5e5e5
@@ -113,16 +166,7 @@ Refactoring UI(page-34) book
 -- string n10: #ffffff
 
 
-
-/-- Box-Shadow: Refer page no. 159 - 161
-
--- string bs0: 0 1px 3px hsla(0, 0%, 0%, .2)
--- string bs1: 0 4px 6px hsla(0, 0%, 0%, .1)
--- string bs2: 0 5px 15px hsla(0, 0%, 0%, .2)
--- string bs3: 0 10px 24px hsla(0, 0%, 0%, .2)
--- string bs4: 0 15px 35px hsla(0, 0%, 0%, .2)
-
-/-- Baground-Colors:
+/-- Baground-Colors Color Shades: RGB values
 
 -- string bg-black: rgb(0 0 0);
 -- string bg-white: rgb(255 255 255);
@@ -135,4 +179,29 @@ Refactoring UI(page-34) book
 -- string bg-grey-6: rgb(55 65 81);
 -- string bg-grey-7: rgb(31 41 55);
 -- string bg-grey-8: rgb(17 24 39);
+
+
+/-- Baground-Colors Color Shades: Hexadecimal values
+
+-- string bg-black: #000000;
+-- string bg-white: #ffffff;
+-- string bg-grey-0: #f3f4f6;
+-- string bg-grey-1: #e5e7eb;
+-- string bg-grey-2: #d1d5db;
+-- string bg-grey-3: #9ca3af;
+-- string bg-grey-4: #6b7280;
+-- string bg-grey-5: #4b5563;
+-- string bg-grey-6: #374151;
+-- string bg-grey-7: #1f2937;
+-- string bg-grey-8: #111827;
+
+
+
+/-- Box-Shadow: Referring page no. 159-161 - from bible and tailwindcss.com
+
+-- string bs0: 0 1px 3px hsla(0, 0%, 0%, .2)
+-- string bs1: 0 4px 6px hsla(0, 0%, 0%, .1)
+-- string bs2: 0 5px 15px hsla(0, 0%, 0%, .2)
+-- string bs3: 0 10px 24px hsla(0, 0%, 0%, .2)
+-- string bs4: 0 15px 35px hsla(0, 0%, 0%, .2)
 
