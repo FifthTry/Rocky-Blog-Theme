@@ -1,25 +1,14 @@
 -- import: docs as docs
--- import: fpm-ui
+-- import: fpm
+-- import: config
 -- import: header as head
 -- import: author as auth
-
-
-/below global variables will go in config.ftd 
 
 -- string author-image: static/author-default.png
 -- string author-image-link: http://fifthtry.com
 -- string author-name:  John Cartor
 -- string author-profile: Web Developer
 -- string author-email: john.cartor@fifthtry.com
--- string neutral: #fff
--- string neutral-200: #e5e5e5
--- string neutral-300: #F9F9F9
--- string neutral-400: #E1E1E1
--- string neutral-500: #323546
--- string neutral-600: #3E4155
--- string neutral-700: #18191a
--- string neutral-800: #000
-
 
 
 -- ftd.column:
@@ -28,8 +17,8 @@ padding-left: 150
 padding-right: 150
 padding-bottom:40
 padding-top: 40
-background-color if $fpm-ui.dark-mode: #333333 
-background-color: #f6f6f6
+background-color if $fpm.dark-mode: $config.n6 
+background-color: $config.n0
 
 -- docs.theme: fifthtry.github.io/Rocky-theme
 
@@ -44,6 +33,7 @@ This is library created for light blog theme. Github URL: {url}.
 Sample Pages:
 - [blog-index](blog-index/)
 - [blog-post](blog-post/)
+- [theme](theme/)
 
 -- ftd.text url: sometext here
 color: yellow
@@ -276,7 +266,7 @@ link: https://www.fifthtry.com/
 
 -- docs.output:
 
---- auth.author-photo:
+/--- auth.author-photo:
 src: static/author-default.png
 link: https://www.fifthtry.com/
 width: 180
@@ -301,7 +291,7 @@ height: 180
 
 -- docs.output:
 
---- auth.author-photo:
+/--- auth.author-photo:
 src: static/author-default.png
 link: https://www.fifthtry.com/
 width: 180
@@ -321,7 +311,7 @@ lang: ftd
 
 -- docs.output:
 
---- auth.author-email: johncartor@firthtry.com
+/--- auth.author-email: johncartor@firthtry.com
 
 
 
@@ -526,8 +516,8 @@ string src:
 string width: 330
 string height: 170
 width: fill
-background-color if $fpm-ui.dark-mode: #212121
-background-color: \#F6F6F6
+background-color if $fpm.dark-mode: $config.n7
+background-color: $config.n0
 spacing: 30
 padding-left: 150
 padding-right: 150
@@ -535,10 +525,10 @@ padding-top: 50
 padding-bottom: 50
 
 --- timestamp-caption: $timestamp-caption
-if: $fpm-ui.mobile
+if: $fpm.mobile
 
 --- timestamp: $timestamp
-if: $fpm-ui.mobile
+if: $fpm.mobile
 
 --- post-image:
 
@@ -549,10 +539,10 @@ width: $width
 height: $height
 
 --- timestamp-caption: $timestamp-caption
-if: not $fpm-ui.mobile
+if: not $fpm.mobile
 
 --- timestamp: $timestamp
-if: not $fpm-ui.mobile
+if: not $fpm.mobile
 
 --- container: ftd.main
 
@@ -582,10 +572,10 @@ string src:
 string width: 330
 string height: 170
 width: fill
-background-color if $fpm-ui.dark-mode: #212121
-background-color: \#F6F6F6
+background-color if $fpm.dark-mode: $config.n7
+background-color: $config.n0
 spacing: 30
-/spacing if $fpm-ui.mobile: 10
+/spacing if $fpm.mobile: 10
 padding-left: 30
 padding-right: 30
 padding-top: 15
@@ -593,10 +583,10 @@ padding-bottom: 15
 margin-bottom: -1
 
 --- timestamp-caption: $timestamp-caption
-if: $fpm-ui.mobile
+if: $fpm.mobile
 
 --- timestamp: $timestamp
-if: $fpm-ui.mobile
+if: $fpm.mobile
 
 --- post-image:
 
@@ -607,10 +597,10 @@ width: $width
 height: $height
 
 --- timestamp-caption: $timestamp-caption
-if: not $fpm-ui.mobile
+if: not $fpm.mobile
 
 --- timestamp: $timestamp
-if: not $fpm-ui.mobile
+if: not $fpm.mobile
 
 --- post-details:
 
@@ -636,7 +626,7 @@ string width: 330
 string height: 170
 
 --- post-desktop:
-if: not $fpm-ui.mobile
+if: not $fpm.mobile
 title: $title
 body: $body
 timestamp-caption: $timestamp-caption
@@ -647,7 +637,7 @@ width: $width
 height: $height
 
 --- post-mobile:
-if: $fpm-ui.mobile
+if: $fpm.mobile
 title: $title
 body: $body
 timestamp-caption: $timestamp-caption
@@ -660,8 +650,8 @@ height: $height
 -- ftd.column post-image:
 spacing: 10
 min-width: 350
-min-width if $fpm-ui.mobile: 300
-/spacing if not $fpm-ui.mobile: 10
+min-width if $fpm.mobile: 300
+/spacing if not $fpm.mobile: 10
 
 -- ftd.image post-thumbnail:
 optional string link:
@@ -670,30 +660,30 @@ src: $src
 link: $link
 optional string width:
 width: $width
-width if $fpm-ui.mobile: 300
+width if $fpm.mobile: 300
 optional string height:
 height: $height
 align: left
 
 -- ftd.text timestamp-caption: $title
 caption title:
-color if $fpm-ui.dark-mode: #969696
-color: #8A8A8A
+color if $fpm.dark-mode: $config.n3
+color: $config.n4
 size: 24
-size if $fpm-ui.mobile: 12
+size if $fpm.mobile: 12
 line-height: 28
-/line-height if $fpm-ui.mobile: 14
+/line-height if $fpm.mobile: 14
 font: Itim
-padding-top if not $fpm-ui.mobile: 15
+padding-top if not $fpm.mobile: 15
 
 -- ftd.text timestamp: $title
 caption title:
-color if $fpm-ui.dark-mode: #FFFFFF
-color: #000000
+color if $fpm.dark-mode: $config.n10
+color: $config.n9
 size: 30
-size if $fpm-ui.mobile: 12
+size if $fpm.mobile: 12
 line-height: 36
-/line-height if $fpm-ui.mobile: 14
+/line-height if $fpm.mobile: 14
 align: left
 font: Itim
 
@@ -705,12 +695,12 @@ width: fill
 caption title:
 optional string link: 
 link: $link
-color if $fpm-ui.dark-mode: #E9E9E9
-color: #000000
+color if $fpm.dark-mode: $config.n1
+color: $config.n9
 size: 66
-size if $fpm-ui.mobile: 26
+size if $fpm.mobile: 26
 line-height: 79
-/line-height if $fpm-ui.mobile: 26
+/line-height if $fpm.mobile: 26
 align: left
 font: Itim
 padding-bottom: 25
@@ -719,12 +709,12 @@ padding-bottom: 25
 body body:
 optional string link: 
 link: $link
-color if $fpm-ui.dark-mode: #969696
-color: #000000
+color if $fpm.dark-mode: $config.n3
+color: $config.n9
 size: 36
-size if $fpm-ui.mobile: 15
+size if $fpm.mobile: 15
 line-height: 43
-/line-height if $fpm-ui.mobile: 18
+/line-height if $fpm.mobile: 18
 align: left
 font: Itim
 
@@ -732,8 +722,8 @@ $body
 
 
 -- ftd.row seperator:
-background-color if $fpm-ui.dark-mode: #212121
-background-color: \#F6F6F6
+background-color if $fpm.dark-mode: $config.n7
+background-color: $config.n0
 width: percent 100
 padding-top: 20
 padding-bottom: 20
@@ -749,21 +739,21 @@ optional string height:
 height: $height
 align: center
 padding-top: 40
-padding-top if $fpm-ui.mobile: 30
+padding-top if $fpm.mobile: 30
 
 
 -- ftd.column footer:
 caption title:
 optional body body:
 optional string link:
-background-color if $fpm-ui.dark-mode: #151515
-background-color: \#ffffff
+background-color if $fpm.dark-mode: $config.n8
+background-color: $config.n10
 padding-top: 30
 padding-bottom: 30
 padding-left: 150
-padding-left if $fpm-ui.mobile: 30
+padding-left if $fpm.mobile: 30
 padding-right: 150
-padding-right if $fpm-ui.mobile: 30
+padding-right if $fpm.mobile: 30
 align: center
 width: fill
 
@@ -772,15 +762,15 @@ link: $link
 
 
 -- ftd.text footer-link:$title
-color if $fpm-ui.dark-mode: #969696
-color: \#000000
+color if $fpm.dark-mode: $config.n3
+color: $config.n9
 caption title:
 optional string link: 
 link: $link 
 font: Itim
 size: 16
-size if $fpm-ui.mobile: 10
+size if $fpm.mobile: 10
 line-height: 20 
-/line-height if $fpm-ui.mobile: 12
+/line-height if $fpm.mobile: 12
 width: percent 100
 text-align: center
