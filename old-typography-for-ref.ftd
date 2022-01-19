@@ -1,0 +1,114 @@
+/-- Colors: Referring page no. 131-132 - from bible and tailwindcss.com
+
+We will keep using very minimal color shades while designing our themes. Below
+are most common and used color shades.
+
+/-- Primary Color Shades: RGB values
+
+-- string p0: rgb(224 242 254)
+-- string p1: rgb(186 230 253);
+-- string p2: rgb(125 211 252);
+-- string p3: rgb(56 189 248);
+-- string p4: rgb(14 165 233);
+-- string p5: rgb(2 132 199);
+-- string p6: rgb(3 105 161);
+-- string p7: rgb(7 89 133);
+-- string p8: rgb(12 74 110);
+
+
+/-- Primary Color Shades: Hexadecimal values
+
+-- string p0: #E0FCFF;
+-- string p1: #BEF8FD;
+-- string p2: #87EAF2;
+-- string p3: #54D1DB;
+-- string p4: #38BEC9;
+-- string p5: #2CB1BC;
+-- string p6: #14919B;
+-- string p7: #0E7C86;
+-- string p8: #0A6C74;
+-- string p8: #044E54;
+
+
+
+/-- Neutral Color Shades: RGB values
+
+-- string n0: #F0F4F8  
+-- string n1: #D9E2EC
+-- string n2: #BCCCDC
+-- string n3: #9FB3C8
+-- string n4: #829AB1
+-- string n5: #627D98
+-- string n6: #486581
+-- string n7: #334E68
+-- string n8: #243B53
+-- string n9: #102A43
+
+
+/-- Accent colors set 1:
+
+-- string a0-1: #124544
+-- string a0-2: #1b655e
+-- string a0-3: #2a9187
+-- string a0-4: #3caea3
+-- string a0-5: #6ed7d3
+-- string a0-6: #a8eeeb
+-- string a0-7: #e7fffe
+
+
+/-- Accent colors set 1:
+
+-- string a0-1: #124544
+-- string a0-2: #1b655e
+-- string a0-3: #2a9187
+-- string a0-4: #3caea3
+-- string a0-5: #6ed7d3
+-- string a0-6: #a8eeeb
+-- string a0-7: #e7fffe
+
+
+
+
+/-- Neutral Color Shades: Hexadecimal values
+
+-- string n0: #f6f6f6
+-- string n1: #e5e5e5
+-- string n2: #d4d4d4
+-- string n3: #a3a3a3
+-- string n4: #737373
+-- string n5: #525252
+-- string n6: #333333
+-- string n7: #262626
+-- string n8: #171717
+-- string n9: #000000
+-- string n10: #ffffff
+
+
+/-- Baground-Colors Color Shades: RGB values
+
+-- string bg-black: rgb(0 0 0);
+-- string bg-white: rgb(255 255 255);
+-- string bg-grey-0: rgb(243 244 246);
+-- string bg-grey-1: rgb(229 231 235);
+-- string bg-grey-2: rgb(209 213 219);
+-- string bg-grey-3: rgb(156 163 175);
+-- string bg-grey-4: rgb(107 114 128);
+-- string bg-grey-5: rgb(75 85 99);
+-- string bg-grey-6: rgb(55 65 81);
+-- string bg-grey-7: rgb(31 41 55);
+-- string bg-grey-8: rgb(17 24 39);
+
+
+/-- Baground-Colors Color Shades: Hexadecimal values
+
+-- string bg-black: #000000;
+-- string bg-white: #ffffff;
+-- string bg-grey-0: #f3f4f6;
+-- string bg-grey-1: #e5e7eb;
+-- string bg-grey-2: #d1d5db;
+-- string bg-grey-3: #9ca3af;
+-- string bg-grey-4: #6b7280;
+-- string bg-grey-5: #4b5563;
+-- string bg-grey-6: #374151;
+-- string bg-grey-7: #1f2937;
+-- string bg-grey-8: #111827;

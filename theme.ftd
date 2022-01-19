@@ -1,0 +1,103 @@
+-- import: typography as theme
+
+-- ftd.row:
+width: fill
+align: center
+padding: 20
+background-color: $theme.header
+
+-- ftd.text: Theme Color Palete
+width: fill
+color: $theme.dark
+size: 48
+padding-bottom: 10
+text-align: center
+background-color: $theme.header
+
+-- container: ftd.main 
+
+-- ftd.column:
+align: center
+width: fill
+spacing: 20
+background-color: $theme.body
+
+
+-- palete: $theme.primary
+text: Primary:
+
+
+-- palete: $theme.primary-text
+text: Primary-Text:
+
+
+-- palete: $theme.secondary
+text: Secondary:
+
+
+-- palete: $theme.success
+text: Success:
+
+
+-- palete: $theme.danger
+text: Danger:
+
+
+-- palete: $theme.warning
+text: Warning:
+
+
+-- palete: $theme.info
+text: Info:
+
+
+-- palete: $theme.light
+text: Light:
+
+
+-- palete: $theme.dark
+text: Dark:
+
+
+-- palete: $theme.white
+text: White:
+
+
+
+
+
+
+
+
+
+
+-- container: ftd.main 
+
+-- ftd.column:
+align: center
+width: fill
+spacing: 20
+background-color: $theme.footer
+padding: 100
+
+--- ftd.text: this is footer
+align: center
+
+
+
+
+
+
+-- ftd.row palete: 
+caption colorcode: 
+string text: 
+align: center
+padding: 10
+width: 200
+background-color: $colorcode
+color: $theme.primary-text
+spacing: 10
+
+--- ftd.text: $text
+
+--- ftd.text: $colorcode

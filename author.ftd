@@ -1,4 +1,5 @@
--- import: fpm-ui
+-- import: fpm
+-- import: config
 
 -- ftd.row author:
 caption title:
@@ -9,16 +10,16 @@ string height: 180
 string link:
 string email:
 width: fill
-background-color if $fpm-ui.dark-mode: #313131 
-background-color: \#E7E7E7
+background-color if $fpm.dark-mode: $config.n9
+background-color: $config.n1
 padding-left: 150
-padding-left if $fpm-ui.mobile: 30
+padding-left if $fpm.mobile: 30
 padding-right: 150
-padding-right if $fpm-ui.mobile: 30
+padding-right if $fpm.mobile: 30
 padding-top: 50
-padding-top if $fpm-ui.mobile: 15
+padding-top if $fpm.mobile: 15
 padding-bottom: 50
-padding-bottom if $fpm-ui.mobile: 15
+padding-bottom if $fpm.mobile: 15
 
 --- author-section-left:
 
@@ -52,12 +53,12 @@ width: percent 80
 caption title:
 optional string link: 
 link: $link
-color if $fpm-ui.dark-mode: #E9E9E9 
-color: #000000
+color if $fpm.dark-mode: $config.n1 
+color: $config.n9
 size: 56
-size if $fpm-ui.mobile: 28
+size if $fpm.mobile: 28
 line-height: 67
-/line-height if $fpm-ui.mobile: 34
+/line-height if $fpm.mobile: 34
 align: left
 font: Itim
 
@@ -65,12 +66,12 @@ font: Itim
 body body:
 optional string link: 
 link: $link
-color if $fpm-ui.dark-mode: #969696 
-color: #000000
+color if $fpm.dark-mode: $config.n3 
+color: $config.n9
 size: 36
-size if $fpm-ui.mobile: 14
+size if $fpm.mobile: 14
 line-height: 43
-/line-height if $fpm-ui.mobile: 16
+/line-height if $fpm.mobile: 16
 align: left
 font: Itim
 
@@ -78,7 +79,7 @@ $body
 
 -- ftd.column author-section-right:
 width: percent 20
-width if $fpm-ui.mobile: 140
+width if $fpm.mobile: 140
 spacing: 10
 
 -- ftd.image author-photo:
@@ -89,17 +90,17 @@ link: $link
 optional string width:
 width: $width
 optional string height:
-width if $fpm-ui.mobile: 140
+width if $fpm.mobile: 140
 height: $height
 align: center
-align if $fpm-ui.mobile: right
+align if $fpm.mobile: right
 border-radius: 500
 
 -- ftd.text author-email: $title
-if: not $fpm-ui.mobile
+if: not $fpm.mobile
 caption title:
-color if $fpm-ui.dark-mode: #BFBFBF
-color: #000000
+color if $fpm.dark-mode: $config.n2
+color: $config.n9
 size: 24
 line-height: 28
 align: center

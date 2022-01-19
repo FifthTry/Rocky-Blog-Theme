@@ -1,0 +1,91 @@
+
+/-- Info:
+
+ Below are global variables will inside config.ftd 
+
+/-- fonts:
+-- string f0: 12
+-- string f1: 14
+-- string f2: 16
+-- string f3: 18
+-- string f4: 20
+-- string f5: 24
+-- string f6: 30
+-- string f7: 36
+-- string f8: 48
+-- string f9: 60
+-- string f10: 72
+
+/-- line-height:
+-- string lh0: 1
+-- string lh1: 1.5
+-- string lh2: 1.75
+-- string lh3: 2
+
+
+/-- font-weight:
+-- string w0: 400
+-- string w1: 500
+-- string w2: 600
+-- string w3: 700
+-- string w4: 800
+-- string w5: 900
+
+
+/-- padding:
+-- string p0: 6 8
+-- string p1: 8 10
+-- string p2: 12 16
+-- string p3: 15 30
+-- string py: 15 0
+-- string px: 0 15
+
+
+/-- margin:
+-- string m0: 6 8
+-- string m1: 8 10
+-- string m2: 12 16
+-- string m3: 15 30
+-- string my: 15 0
+-- string mx: 0 15
+
+
+/-- neutral-colors:
+-- string n0: #f6f6f6
+-- string n1: #e5e5e5
+-- string n2: #BFBFBF
+-- string n3: #969696
+-- string n4: #8A8A8A
+-- string n5: #525252
+-- string n6: #333333
+-- string n7: #262626
+-- string n8: #151515
+-- string n9: #000000
+-- string n10: #ffffff
+
+
+/-- background-colors:
+-- string bg-black: #000000
+-- string bg-white: #ffffff
+-- string bg-grey-0: #f3f4f6
+-- string bg-grey-1: #e5e7eb
+-- string bg-grey-2: #d1d5db
+-- string bg-grey-3: #9ca3af
+-- string bg-grey-4: #6b7280
+-- string bg-grey-5: #4b5563
+-- string bg-grey-6: #374151
+-- string bg-grey-7: #1f2937
+-- string bg-grey-8: #111827
+
+
+/-- primary-color:
+-- string p0: #DDEDFF
+-- string p1: #bae6fd
+-- string p2: #7dd3fc
+-- string p3: #38bdf8
+-- string p4: #0ea5e9
+-- string p5: #0284c7
+-- string p6: #0369a1
+-- string p7: #075985
+-- string p8: #0c4a6e
+

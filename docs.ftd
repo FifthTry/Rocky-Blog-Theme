@@ -1,4 +1,5 @@
--- import: fpm-ui
+-- import: fpm
+-- import: config
 
 -- string neutral: #fff
 -- string neutral-200: #e5e5e5
@@ -8,7 +9,7 @@
 
 -- ftd.row dark-mode-switcher:
 border-width: 1
-border-color: #fff
+border-color: $config.n10
 padding: 10
 
 --- ftd.text: Click on mode to switch onto:
@@ -21,19 +22,19 @@ padding-right: 10
 --- ftd.text: Light Mode
 $event-click$: message-host enable-light-mode
 padding-right: 10
-color: #969696
+color: $config.n3
 
 --- ftd.text: System Mode
 $event-click$: message-host enable-system-mode
 padding-right: 10
-color: #000000
+color: $config.n9
 
 --- ftd.text: Mobile
-if: $fpm-ui.mobile
+if: $fpm.mobile
 padding-right: 10
 
 --- ftd.text: Desktop
-if: not $fpm-ui.mobile
+if: not $fpm.mobile
 
 
 
@@ -41,21 +42,21 @@ if: not $fpm-ui.mobile
 caption name:
 size: 48
 style: bold
-color if $fpm-ui.dark-mode: blue
-color: #ccc
+color if $fpm.dark-mode: blue
+color: $config.n2
 
 
 -- ftd.text component: $name
 caption name:
 size: 32
 style: bold
-color: #333
+color: $config.n6
 
 -- ftd.text component-argument: $name
 caption name:
 size: 24
 style: bold
-color: #333
+color: $config.n6
 
 -- ftd.text markdown:
 body body:
@@ -65,8 +66,8 @@ optional boolean two_columns:
 text: $body
 size: 18
 line-height: 24
-color: $neutral-700
-color if $fpm-ui.dark-mode: $neutral-200
+color: $config.n8
+color if $fpm.dark-mode: $config.n1
 padding-bottom: 8
 font: apple-system
 
@@ -78,10 +79,10 @@ padding-top: 12
 padding-bottom:  20
 
 --- ftd.text: $caption
-color if $fpm-ui.dark-mode: white
-color: #000000
-background-color if $fpm-ui.dark-mode: #969696
-background-color: \#cccccc
+color if $fpm.dark-mode: white
+color: $config.n9
+background-color if $fpm.dark-mode: $config.n3
+background-color: $config.n8
 border-top-radius: 2
 padding-top: 3
 padding-bottom: 3
@@ -91,7 +92,7 @@ size: 12
 
 --- ftd.column:
 border-width: 1
-border-color: #ddedff
+border-color: $config.p0
 width: fill
 id: output-container
 padding-top: 30
@@ -99,8 +100,8 @@ padding-bottom: 30
 padding-left: 20
 padding-right: 20
 border-radius: 2
-background-color if $fpm-ui.dark-mode: #212121
-background-color: #E7E7E7
+background-color if $fpm.dark-mode: $config.n7
+background-color: $config.n1
 
 
 -- ftd.column code:
@@ -117,11 +118,11 @@ width: fill
 text: $caption
 if: $caption is not null
 color: white
-color if $fpm-ui.dark-mode: #DCDCDC
+color if $fpm.dark-mode: $config.n1
 width: fill
 size: 14
-background-color: grey
-background-color if $fpm-ui.dark-mode: #3a404e
+background-color: $config.bg-grey-1
+background-color if $fpm.dark-mode: $config.bg-grey-6
 padding-top: 10
 padding-bottom: 10
 padding-left: 20
@@ -130,7 +131,7 @@ border-top-radius: 4
 font: Open sans
 
 --- ftd.code:
-if: $fpm-ui.dark-mode
+if: $fpm.dark-mode
 text: $body
 lang: $lang
 color: #4D4D4D
@@ -147,7 +148,7 @@ border-top-radius: 4
 overflow-x: auto
 
 --- ftd.code:
-if: not $fpm-ui.dark-mode
+if: not $fpm.dark-mode
 theme: InspiredGitHub
 text: $body
 lang: $lang

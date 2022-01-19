@@ -1,4 +1,4 @@
--- import: fpm-ui
+-- import: fpm
 
 
 -- ftd.row header:
@@ -12,16 +12,16 @@ string linkedin-link:
 string instagram-link:
 string redit-link:
 width: fill
-background-color if $fpm-ui.dark-mode: #151515 
+background-color if $fpm.dark-mode: #151515 
 background-color: \#ffffff
 padding-left: 150
-padding-left if $fpm-ui.mobile: 30
+padding-left if $fpm.mobile: 30
 padding-right: 150
-padding-right if $fpm-ui.mobile: 30
+padding-right if $fpm.mobile: 30
 padding-top: 30
-padding-top if $fpm-ui.mobile: 15
+padding-top if $fpm.mobile: 15
 padding-bottom: 30
-padding-bottom if $fpm-ui.mobile: 15
+padding-bottom if $fpm.mobile: 15
 
 
 --- header-left:
@@ -79,24 +79,24 @@ string link:
 src: $src
 link: $link
 width: auto
-width if $fpm-ui.mobile: 36
-height if $fpm-ui.mobile: 36
+width if $fpm.mobile: 36
+height if $fpm.mobile: 36
 align: left
 
 -- ftd.text site-title: $title
 caption title:
 optional string url:
 link: $url
-color if $fpm-ui.dark-mode: #E4E4E4 
+color if $fpm.dark-mode: #E4E4E4 
 color: #000000
-size if $fpm-ui.mobile: 21
+size if $fpm.mobile: 21
 size: 48
 align: left
 font: Itim
 padding-left: 20
 
 -- ftd.row header-right:
-if: not $fpm-ui.mobile
+if: not $fpm.mobile
 min-width: 350
 align: right
 spacing: 20
@@ -106,7 +106,7 @@ spacing: 20
 caption title:
 optional string link: 
 link: $link
-color if $fpm-ui.dark-mode: #676767 
+color if $fpm.dark-mode: #676767 
 color: #7B7B7B
 size: 20
 align: center

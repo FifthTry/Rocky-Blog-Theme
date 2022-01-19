@@ -7,7 +7,6 @@ the book "Refractoring UI - by Adam Wathan & Steve Schoger". Hereafter we call
 it our 'bible'.
 
 
-
 /-- Fonts: Referring to page no. 91 - from bible 
 
 below are all base font sizes for all type of font families. Either we use
@@ -107,96 +106,6 @@ e.g.: margin: $py OR margin: $px OR margin: $p0
 
 
 
-/-- Colors: Referring page no. 131-132 - from bible and tailwindcss.com
-
-We will keep using very minimal color shades while designing our themes. Below
-are most common and used color shades.
-
-/-- Primary Color Shades: RGB values
-
--- string p0: rgb(224 242 254)
--- string p1: rgb(186 230 253);
--- string p2: rgb(125 211 252);
--- string p3: rgb(56 189 248);
--- string p4: rgb(14 165 233);
--- string p5: rgb(2 132 199);
--- string p6: rgb(3 105 161);
--- string p7: rgb(7 89 133);
--- string p8: rgb(12 74 110);
-
-
-/-- Primary Color Shades: Hexadecimal values
-
--- string p0: #e0f2fe;
--- string p1: #bae6fd;
--- string p2: #7dd3fc;
--- string p3: #38bdf8;
--- string p4: #0ea5e9;
--- string p5: #0284c7;
--- string p6: #0369a1;
--- string p7: rgb(7 89 133);
--- string p8: rgb(12 74 110);
-
-
-/-- Neutral Color Shades: RGB values
-
--- string n0: rgb(245 245 245); 
--- string n1: rgb(229 229 229);
--- string n2: rgb(212 212 212);
--- string n3: rgb(163 163 163);
--- string n4: rgb(115 115 115);
--- string n5: rgb(82 82 82);
--- string n6: rgb(64 64 64);
--- string n7: rgb(38 38 38);
--- string n8: rgb(23 23 23);
-
-
-/-- Neutral Color Shades: Hexadecimal values
-
--- string n0: #f6f6f6
--- string n1: #e5e5e5
--- string n2: #d4d4d4
--- string n3: #a3a3a3
--- string n4: #737373
--- string n5: #525252
--- string n6: #333333
--- string n7: #262626
--- string n8: #171717
--- string n9: #000000
--- string n10: #ffffff
-
-
-/-- Baground-Colors Color Shades: RGB values
-
--- string bg-black: rgb(0 0 0);
--- string bg-white: rgb(255 255 255);
--- string bg-grey-0: rgb(243 244 246);
--- string bg-grey-1: rgb(229 231 235);
--- string bg-grey-2: rgb(209 213 219);
--- string bg-grey-3: rgb(156 163 175);
--- string bg-grey-4: rgb(107 114 128);
--- string bg-grey-5: rgb(75 85 99);
--- string bg-grey-6: rgb(55 65 81);
--- string bg-grey-7: rgb(31 41 55);
--- string bg-grey-8: rgb(17 24 39);
-
-
-/-- Baground-Colors Color Shades: Hexadecimal values
-
--- string bg-black: #000000;
--- string bg-white: #ffffff;
--- string bg-grey-0: #f3f4f6;
--- string bg-grey-1: #e5e7eb;
--- string bg-grey-2: #d1d5db;
--- string bg-grey-3: #9ca3af;
--- string bg-grey-4: #6b7280;
--- string bg-grey-5: #4b5563;
--- string bg-grey-6: #374151;
--- string bg-grey-7: #1f2937;
--- string bg-grey-8: #111827;
-
-
-
 /-- Box-Shadow: Referring page no. 159-161 - from bible and tailwindcss.com
 
 -- string bs0: 0 1px 3px hsla(0, 0%, 0%, .2)
@@ -204,4 +113,74 @@ are most common and used color shades.
 -- string bs2: 0 5px 15px hsla(0, 0%, 0%, .2)
 -- string bs3: 0 10px 24px hsla(0, 0%, 0%, .2)
 -- string bs4: 0 15px 35px hsla(0, 0%, 0%, .2)
+
+
+
+/-- rounded-buttons:
+
+rounded buttons which look like half circle left and half circle right
+
+-- string border-radius: 500
+
+/-- square-button:
+
+square buttons which look like square and no rounded cornders
+
+-- string border-radius: 0
+
+/-- rounded-corner-button:
+
+rounded corner buttons which look like square and rounded cornders for top, 
+right, left and bottom all sides
+
+-- string border-radius: 6
+
+/-- colors:
+
+basically we divide our web-app into below parts as Primary colors, Secondary
+Colors, Success Colors, Danger Colors, Warning Colors, Info Colors, 
+ Dark Colors and Light Colors.
+
+-- string header: gray
+-- string body: purple
+-- string footer: gray
+-- string primary: #1266F1
+-- string primary-text: #000
+-- string secondary: #B23CFD
+-- string success: #00B74A
+-- string danger: #F93154
+-- string warning: #FFA900
+-- string info: #39C0ED
+-- string light: #FBFBFB
+-- string dark: #262626
+-- string white: #ffffff
+
+/-- color-palete:
+
+we definied below color palete for our all web-aps. Below color palete is for 
+light and dark theme.
+
+/-- primary-shade-palete:
+-- string p-p50: #e1f5fe
+-- string p-p100: #b3e5fc
+-- string p-p200: #81d4fa
+-- string p-p300: #4fc3f7
+-- string p-p400: #29b6f6
+-- string p-p500: #03a9f4
+-- string p-p600: #039be5
+-- string p-p700: #0288d1
+-- string p-p800: #0277bd
+-- string p-p900: #01579b
+
+/-- gray-shade-palete:
+-- string g-g50: #FAFAFA
+-- string g-g100: #f8f9fa
+-- string g-g200: #e9ecef
+-- string g-g300: #dee2e6
+-- string g-g400: #ced4da
+-- string g-g500: #adb5bd
+-- string g-g600: #6c757d
+-- string g-g700: #495057
+-- string g-g800: #343a40
+-- string g-g900: #212529
 

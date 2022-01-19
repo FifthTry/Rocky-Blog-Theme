@@ -1,4 +1,4 @@
--- import: fpm-ui
+-- import: fpm
 -- import: index
 
 
@@ -12,7 +12,7 @@ string src:
 string width: 330
 string height: 170
 width: fill
-background-color if $fpm-ui.dark-mode: #212121
+background-color if $fpm.dark-mode: #212121
 background-color: \#F6F6F6
 spacing: 30
 padding-left: 150
@@ -21,10 +21,10 @@ padding-top: 50
 padding-bottom: 50
 
 --- timestamp-caption: $timestamp-caption
-if: $fpm-ui.mobile
+if: $fpm.mobile
 
 --- timestamp: $timestamp
-if: $fpm-ui.mobile
+if: $fpm.mobile
 
 --- post-image:
 
@@ -35,10 +35,10 @@ width: $width
 height: $height
 
 --- timestamp-caption: $timestamp-caption
-if: not $fpm-ui.mobile
+if: not $fpm.mobile
 
 --- timestamp: $timestamp
-if: not $fpm-ui.mobile
+if: not $fpm.mobile
 
 --- container: ftd.main
 
@@ -68,10 +68,10 @@ string src:
 string width: 330
 string height: 170
 width: fill
-background-color if $fpm-ui.dark-mode: #212121
+background-color if $fpm.dark-mode: #212121
 background-color: \#F6F6F6
 spacing: 30
-/spacing if $fpm-ui.mobile: 10
+/spacing if $fpm.mobile: 10
 padding-left: 30
 padding-right: 30
 padding-top: 15
@@ -79,10 +79,10 @@ padding-bottom: 15
 margin-bottom: -1
 
 --- timestamp-caption: $timestamp-caption
-if: $fpm-ui.mobile
+if: $fpm.mobile
 
 --- timestamp: $timestamp
-if: $fpm-ui.mobile
+if: $fpm.mobile
 
 --- post-image:
 
@@ -93,10 +93,10 @@ width: $width
 height: $height
 
 --- timestamp-caption: $timestamp-caption
-if: not $fpm-ui.mobile
+if: not $fpm.mobile
 
 --- timestamp: $timestamp
-if: not $fpm-ui.mobile
+if: not $fpm.mobile
 
 --- post-details:
 
@@ -133,7 +133,7 @@ optional string code:
 optional string width:
 optional string height:
 width: fill
-background-color if $fpm-ui.dark-mode: #212121
+background-color if $fpm.dark-mode: #212121
 background-color: \#F6F6F6
 spacing: 30
 padding-left: 150
@@ -201,7 +201,7 @@ optional string code:
 optional string width:
 optional string height:
 width: fill
-background-color if $fpm-ui.dark-mode: #212121
+background-color if $fpm.dark-mode: #212121
 background-color: \#F6F6F6
 spacing: 30
 padding-left: 150
@@ -228,7 +228,7 @@ string width: 330
 string height: 170
 
 --- post-summary-desktop:
-if: not $fpm-ui.mobile
+if: not $fpm.mobile
 title: $title
 body: $body
 timestamp-caption: $timestamp-caption
@@ -239,7 +239,7 @@ width: $width
 height: $height
 
 --- post-summary-mobile:
-if: $fpm-ui.mobile
+if: $fpm.mobile
 title: $title
 body: $body
 timestamp-caption: $timestamp-caption
@@ -276,7 +276,7 @@ optional string height:
 
 --- post-desktop:
 id: main
-if: not $fpm-ui.mobile
+if: not $fpm.mobile
 title: $title
 sub-title: $sub-title
 author-image: $author-image
@@ -298,7 +298,7 @@ height: $height
 
 --- post-mobile:
 id: main
-if: $fpm-ui.mobile
+if: $fpm.mobile
 title: $title
 sub-title: $sub-title
 author-image: $author-image 
@@ -324,8 +324,8 @@ height: $height
 -- ftd.column post-image:
 spacing: 10
 min-width: 350
-min-width if $fpm-ui.mobile: 300
-/spacing if not $fpm-ui.mobile: 10
+min-width if $fpm.mobile: 300
+/spacing if not $fpm.mobile: 10
 
 -- ftd.image post-thumbnail:
 optional string link:
@@ -334,30 +334,30 @@ src: $src
 link: $link
 optional string width:
 width: $width
-width if $fpm-ui.mobile: 300
+width if $fpm.mobile: 300
 optional string height:
 height: $height
 align: left
 
 -- ftd.text timestamp-caption: $title
 caption title:
-color if $fpm-ui.dark-mode: #969696
+color if $fpm.dark-mode: #969696
 color: #8A8A8A
 size: 24
-size if $fpm-ui.mobile: 12
+size if $fpm.mobile: 12
 line-height: 28
-/line-height if $fpm-ui.mobile: 14
+/line-height if $fpm.mobile: 14
 font: Itim
-padding-top if not $fpm-ui.mobile: 15
+padding-top if not $fpm.mobile: 15
 
 -- ftd.text timestamp: $title
 caption title:
-color if $fpm-ui.dark-mode: #FFFFFF
+color if $fpm.dark-mode: #FFFFFF
 color: #000000
 size: 30
-size if $fpm-ui.mobile: 12
+size if $fpm.mobile: 12
 line-height: 36
-/line-height if $fpm-ui.mobile: 14
+/line-height if $fpm.mobile: 14
 align: left
 font: Itim
 
@@ -369,12 +369,12 @@ width: fill
 caption title:
 optional string link: 
 link: $link
-color if $fpm-ui.dark-mode: #E9E9E9
+color if $fpm.dark-mode: #E9E9E9
 color: #000000
 size: 66
-size if $fpm-ui.mobile: 26
+size if $fpm.mobile: 26
 line-height: 79
-/line-height if $fpm-ui.mobile: 26
+/line-height if $fpm.mobile: 26
 align: left
 font: Itim
 padding-bottom: 25
@@ -383,12 +383,12 @@ padding-bottom: 25
 caption title:
 optional string link: 
 link: $link
-color if $fpm-ui.dark-mode: #E9E9E9
+color if $fpm.dark-mode: #E9E9E9
 color: #000000
 size: 88
-size if $fpm-ui.mobile: 24
+size if $fpm.mobile: 24
 line-height: 105
-/line-height if $fpm-ui.mobile: 28
+/line-height if $fpm.mobile: 28
 align: left
 font: Itim
 padding-bottom: 25
@@ -398,12 +398,12 @@ padding-bottom: 25
 optional caption title:
 optional string link: 
 link: $link
-color if $fpm-ui.dark-mode: #969696
+color if $fpm.dark-mode: #969696
 color: #929292
 size: 40
-size if $fpm-ui.mobile: 14
+size if $fpm.mobile: 14
 line-height: 48
-/line-height if $fpm-ui.mobile: 16
+/line-height if $fpm.mobile: 16
 align: left
 font: Itim
 padding-bottom: 25
@@ -435,33 +435,33 @@ optional string email:
 
 
 --- ftd.text: $name
-color if $fpm-ui.dark-mode: #E9E9E9
+color if $fpm.dark-mode: #E9E9E9
 color: #000000
 size: 38
-size if $fpm-ui.mobile: 12
+size if $fpm.mobile: 12
 line-height: 46
-/line-height if $fpm-ui.mobile: 14
+/line-height if $fpm.mobile: 14
 align: left
 font: Itim
 
 
 --- ftd.text: $profile
-color if $fpm-ui.dark-mode: #969696
+color if $fpm.dark-mode: #969696
 color: #5B5B5B
 size: 23
-size if $fpm-ui.mobile: 8
+size if $fpm.mobile: 8
 line-height: 28
-/line-height if $fpm-ui.mobile: 10
+/line-height if $fpm.mobile: 10
 align: left
 font: Itim
 
 --- ftd.text: $email
-color if $fpm-ui.dark-mode: #0B7FEA
+color if $fpm.dark-mode: #0B7FEA
 color: #0B7FEA
 size: 23
-size if $fpm-ui.mobile: 8
+size if $fpm.mobile: 8
 line-height: 28
-/line-height if $fpm-ui.mobile: 10
+/line-height if $fpm.mobile: 10
 align: left
 font: Itim
 
@@ -473,24 +473,24 @@ width: fill
 align: right
 
 --- ftd.text: $caption
-color if $fpm-ui.dark-mode: #969696
+color if $fpm.dark-mode: #969696
 color: #626262
 size: 23
-size if $fpm-ui.mobile: 6
+size if $fpm.mobile: 6
 line-height: 28
-/line-height if $fpm-ui.mobile: 8
+/line-height if $fpm.mobile: 8
 align: left
 font: Itim
 align: right
 text-align: right
 
 --- ftd.text: $timestamp
-color if $fpm-ui.dark-mode: #E9E9E9
+color if $fpm.dark-mode: #E9E9E9
 color: #000000
 size: 23
-size if $fpm-ui.mobile: 8
+size if $fpm.mobile: 8
 line-height: 28
-/line-height if $fpm-ui.mobile: 10
+/line-height if $fpm.mobile: 10
 align: left
 font: Itim
 align: right
@@ -528,12 +528,12 @@ width: fill
 body body:
 optional string link: 
 link: $link
-color if $fpm-ui.dark-mode: #969696
+color if $fpm.dark-mode: #969696
 color: #000000
 size: 36
-size if $fpm-ui.mobile: 15
+size if $fpm.mobile: 15
 line-height: 43
-/line-height if $fpm-ui.mobile: 18
+/line-height if $fpm.mobile: 18
 align: left
 font: Itim
 
@@ -541,7 +541,7 @@ $body
 
 
 -- ftd.row seperator:
-background-color if $fpm-ui.dark-mode: #212121
+background-color if $fpm.dark-mode: #212121
 background-color: \#F6F6F6
 width: percent 100
 padding-top: 20
@@ -558,4 +558,4 @@ optional string height:
 height: $height
 align: center
 padding-top: 40
-padding-top if $fpm-ui.mobile: 30
+padding-top if $fpm.mobile: 30
