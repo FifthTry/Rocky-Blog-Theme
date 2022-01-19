@@ -6,7 +6,8 @@ align: center
 padding: 20
 background-color: $theme.header
 
--- ftd.text: Theme Color Palete
+
+--- ftd.text: Theme Color Palete
 width: fill
 color: $theme.dark
 size: 48
@@ -14,14 +15,20 @@ padding-bottom: 10
 text-align: center
 background-color: $theme.header
 
+
 -- container: ftd.main 
 
--- ftd.column:
+-- ftd.row:
+id: bodyrow
 align: center
 width: fill
 spacing: 20
 background-color: $theme.body
 
+
+-- ftd.column:
+width: fill
+spacing: 20
 
 -- palete: $theme.primary
 text: Primary:
@@ -62,13 +69,35 @@ text: Dark:
 -- palete: $theme.white
 text: White:
 
+-- container: bodyrow 
+
+-- ftd.column:
+width: fill
 
 
+-- content: $theme.primary
+text: The quick brown fox jumps over the lazy dog
 
+-- content: $theme.secondary
+text: The quick brown fox jumps over the lazy dog
 
+-- content: $theme.success
+text: The quick brown fox jumps over the lazy dog
 
+-- content: $theme.danger
+text: The quick brown fox jumps over the lazy dog
 
+-- content: $theme.warning
+text: The quick brown fox jumps over the lazy dog
 
+-- content: $theme.info
+text: The quick brown fox jumps over the lazy dog
+
+-- content: $theme.light
+text: The quick brown fox jumps over the lazy dog
+
+-- content: $theme.dark
+text: The quick brown fox jumps over the lazy dog
 
 
 -- container: ftd.main 
@@ -85,6 +114,18 @@ align: center
 
 
 
+-- ftd.row content: 
+caption colorcode: 
+string text: 
+align: center
+padding: 10
+width: fill
+color: $colorcode
+spacing: 10
+
+--- ftd.text: $text
+
+--- ftd.text: $colorcode
 
 
 

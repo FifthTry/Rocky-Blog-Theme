@@ -142,7 +142,7 @@ Colors, Success Colors, Danger Colors, Warning Colors, Info Colors,
  Dark Colors and Light Colors.
 
 -- string header: gray
--- string body: purple
+-- string body: #ccc
 -- string footer: gray
 -- string primary: #1266F1
 -- string primary-text: #000
