@@ -12,7 +12,7 @@ spacing: 20
 background-color: $theme.header
 
 
---- ftd.text: Rocky Theme Color Palete
+--- ftd.text: Rocky Theme Color Palete - with 'Itim' font
 width: fill
 color: $theme.l-text-1
 color if $fpm.dark-mode: $theme.d-text-1
