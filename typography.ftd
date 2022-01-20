@@ -160,7 +160,40 @@ Colors, Success Colors, Danger Colors, Warning Colors, Info Colors,
 we definied below color palete for our all web-aps. Below color palete is for 
 light and dark theme.
 
-/-- primary-shade-palete:
+
+/-- light-mode-palete:
+-- string l-bg-1: #FFFFFF
+-- string l-bg-2: #E5E5E5
+-- string l-bg-3: #F6F6F6
+-- string l-bg-4: #8E8E8E
+-- string l-bg-5: #ACABAB
+-- string l-bg-6: #CDCECE
+-- string l-text-1: #000000
+-- string l-text-2: #E7E7E7
+-- string l-text-3: #686868
+-- string l-text-4: #0B7FEA
+-- string l-text-5: #7B7B7B
+-- string l-text-6: #8A8A8A
+
+
+/-- dark-mode-palete:
+-- string d-bg-1: #151515
+-- string d-bg-2: #313131
+-- string d-bg-3: #212121
+-- string d-bg-4: #8E8E8E
+-- string d-bg-5: #ACABAB
+-- string d-bg-6: #5E6969
+-- string d-text-1: #E9E9E9
+-- string d-text-2: #969696
+-- string d-text-3: #C8C8C8
+-- string d-text-4: #419BEE
+-- string d-text-5: #E9E9E9
+-- string d-text-6: #CCCCCC
+
+
+
+
+/-- light-mode-palete:
 -- string p-p50: #e1f5fe
 -- string p-p100: #b3e5fc
 -- string p-p200: #81d4fa

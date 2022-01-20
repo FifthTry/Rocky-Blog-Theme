@@ -1,0 +1,185 @@
+-- import: fpm
+-- import: index as lib
+-- docs.dark-mode-switcher:
+
+-- import: typography as theme
+
+
+-- ftd.row:
+width: fill
+align: center
+spacing: 20
+background-color: $theme.header
+
+
+--- ftd.text: Rocky Theme Color Palete
+width: fill
+color: $theme.l-text-1
+color if $fpm.dark-mode: $theme.d-text-1
+size: 48
+padding-bottom: 10
+text-align: center
+background-color: $theme.l-bg-1
+background-color if $fpm.dark-mode: $theme.d-bg-1
+font: Itim
+
+
+-- container: ftd.main 
+
+-- ftd.row:
+id: bodyrow
+align: center
+width: fill
+spacing: 20
+background-color: $theme.l-bg-3
+background-color if $fpm.dark-mode: $theme.d-bg-3
+padding: 40
+
+
+-- ftd.column:
+width: fill
+spacing: 20
+
+-- palete: 
+lightcolorcode: $theme.l-bg-1
+darkcolorcode: $theme.d-bg-1
+text: background-1:
+
+
+-- palete: 
+lightcolorcode: $theme.l-bg-2
+darkcolorcode: $theme.d-bg-2
+text: background-2:
+
+
+-- palete: 
+lightcolorcode: $theme.l-bg-3
+darkcolorcode: $theme.d-bg-3
+text: background-3:
+
+
+-- palete: 
+lightcolorcode: $theme.l-bg-4
+darkcolorcode: $theme.d-bg-4
+text: background-4:
+
+
+-- palete: 
+lightcolorcode: $theme.l-bg-5
+darkcolorcode: $theme.d-bg-5
+text: background-5:
+
+
+-- palete: 
+lightcolorcode: $theme.l-bg-6
+darkcolorcode: $theme.d-bg-6
+text: background-6:
+
+
+-- container: bodyrow 
+
+-- ftd.column:
+width: fill
+
+
+-- content:
+lightcolorcode: $theme.l-text-1
+darkcolorcode: $theme.d-text-1
+text: The quick brown fox jumps over the lazy dog
+
+-- content: $theme.secondary
+lightcolorcode: $theme.l-text-2
+darkcolorcode: $theme.d-text-2
+text: The quick brown fox jumps over the lazy dog
+
+-- content: $theme.success
+lightcolorcode: $theme.l-text-3
+darkcolorcode: $theme.d-text-3
+text: The quick brown fox jumps over the lazy dog
+
+-- content: $theme.danger
+lightcolorcode: $theme.l-text-4
+darkcolorcode: $theme.d-text-4
+text: The quick brown fox jumps over the lazy dog
+
+-- content: $theme.warning
+lightcolorcode: $theme.l-text-5
+darkcolorcode: $theme.d-text-5
+text: The quick brown fox jumps over the lazy dog
+
+-- content: $theme.info
+lightcolorcode: $theme.l-text-6
+darkcolorcode: $theme.d-text-6
+text: The quick brown fox jumps over the lazy dog
+
+
+-- container: ftd.main 
+
+-- ftd.column:
+align: center
+width: fill
+spacing: 20
+color: $theme.l-text-1
+color if $fpm.dark-mode: $theme.d-text-2
+background-color: $theme.l-bg-1
+background-color if $fpm.dark-mode: $theme.d-bg-1
+padding: 100
+
+--- ftd.text: &copy; 2022 - Rocky Theme - Fifthtry.com 
+align: center
+font: Itim
+
+
+
+-- ftd.row content: 
+string lightcolorcode: 
+string text: 
+string darkcolorcode:
+align: center
+padding: 10
+width: fill
+color: $lightcolorcode
+color if $fpm.dark-mode: $darkcolorcode
+spacing: 10
+
+--- ftd.text: $text
+font: Itim
+
+--- ftd.text: $darkcolorcode
+if: $fpm.dark-mode 
+font: Itim
+
+--- ftd.text: $lightcolorcode
+if: not $fpm.dark-mode 
+font: Itim
+
+
+
+
+-- ftd.row palete: 
+string lightcolorcode: 
+string darkcolorcode: 
+string text: 
+align: center
+padding: 10
+width: 210
+background-color: $lightcolorcode
+background-color if $fpm.dark-mode: $darkcolorcode
+color: $theme.primary-text
+spacing: 10
+
+--- ftd.text: $text
+font: Itim
+
+--- ftd.text: $darkcolorcode
+if: $fpm.dark-mode 
+font: Itim
+
+--- ftd.text: $lightcolorcode
+if: not $fpm.dark-mode 
+font: Itim
+
+
+
+
+
