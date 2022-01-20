@@ -11,10 +11,46 @@
       "1": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
     }
   },
+  "@body@2": {
+    "value": "",
+    "dependencies": {
+      "2,2": "[{\"dependency_type\":\"Visible\",\"condition\":\"$IsNotNull$\",\"parameters\":{}}]"
+    }
+  },
+  "@body@2,2": {
+    "value": "",
+    "dependencies": {
+      "2,2": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
+    }
+  },
+  "@body@3": {
+    "value": "",
+    "dependencies": {
+      "3,1": "[{\"dependency_type\":\"Visible\",\"condition\":\"$IsNotNull$\",\"parameters\":{}}]"
+    }
+  },
+  "@body@3,1": {
+    "value": "",
+    "dependencies": {
+      "3,1": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
+    }
+  },
   "@body@4": {
     "value": "TikTok marketing is the practice of using TikTok to promote a brand, product or service. It can include different tactics, like influencer marketing, TikTok advertising and creating organic viral content.\n\n- Influencer marketing is a big part of the app’s ecosystem. But you don’t need a high-profile influencer for successful marketing—try to discover rising stars or influencers in your niche. For example, a small cosmetics brand based in Vancouver might search up the hashtag #vancouvermakeup and find influencers like Sarah McNabb.\n- Organic content or creating your own TikToks is also a great way to drive traffic. This option gives you the most freedom. Create a Business TikTok account for your brand (keep scrolling for detailed step-by-step instructions) and start making your own organic content. The content that you post on other social media platforms, such as Instagram, can give you many TikTok ideas.\n- Paid ads are another way to make use of the platform. Powered by their own advertising platform, TikTok For Business, brands can run in-feed ads or create branded hashtags and video effects. If you’re looking for TikTok marketing examples, brands like Aerie, Little Caesars and Maybelline have done some amazing work.",
     "dependencies": {
       "3,2": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
+    }
+  },
+  "@body@5": {
+    "value": "",
+    "dependencies": {
+      "4,1": "[{\"dependency_type\":\"Visible\",\"condition\":\"$IsNotNull$\",\"parameters\":{}}]"
+    }
+  },
+  "@body@5,1": {
+    "value": "",
+    "dependencies": {
+      "4,1": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
     }
   },
   "@body@6": {
@@ -26,6 +62,7 @@
   "@body@7": {
     "value": "-- compopnent heading:\ncompopnent: ftd.text\n$title: caption\ntext: ref $title\nsize: 35\ncolor: red",
     "dependencies": {
+      "4,3,1": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]",
       "4,3,2": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
     }
   },
@@ -39,6 +76,20 @@
     "value": "Published on",
     "dependencies": {
       "0,0,2,2,0": "[{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
+    }
+  },
+  "@caption@2": {
+    "value": "",
+    "dependencies": {
+      "2,1": "[{\"dependency_type\":\"Visible\",\"condition\":\"$IsNotNull$\",\"parameters\":{}},{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]"
+    }
+  },
+  "@caption@7": {
+    "value": "",
+    "dependencies": {
+      "4,3,0": "[{\"dependency_type\":\"Visible\",\"condition\":\"$IsNotNull$\",\"parameters\":{}},{\"dependency_type\":\"Value\",\"condition\":null,\"parameters\":{}}]",
+      "4,3,1": "[{\"dependency_type\":\"Visible\",\"condition\":\"$IsNotNull$\",\"parameters\":{}}]",
+      "4,3,2": "[{\"dependency_type\":\"Visible\",\"condition\":\"$IsNull$\",\"parameters\":{}}]"
     }
   },
   "@email@0,0,2,1": {
@@ -140,9 +191,13 @@
       "0,0,4,0,0:content-external:0,0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(233,233,233,1)\",\"important\":false},\"default\":{\"value\":\"rgba(0,0,0,1)\",\"important\":false}}}}]",
       "0,0,4,0,1:content-external:0,0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(150,150,150,1)\",\"important\":false},\"default\":{\"value\":\"rgba(146,146,146,1)\",\"important\":false}}}}]",
       "1": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(229,229,229,1)\",\"important\":false},\"default\":{\"value\":\"rgba(21,21,21,1)\",\"important\":false}}}}]",
+      "2,1": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(255,255,255,1)\",\"important\":false},\"default\":{\"value\":\"rgba(0,0,0,1)\",\"important\":false}}}}]",
+      "2,2": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(229,229,229,1)\",\"important\":false},\"default\":{\"value\":\"rgba(21,21,21,1)\",\"important\":false}}}}]",
       "3,0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(255,255,255,1)\",\"important\":false},\"default\":{\"value\":\"rgba(0,0,0,1)\",\"important\":false}}}}]",
+      "3,1": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(229,229,229,1)\",\"important\":false},\"default\":{\"value\":\"rgba(21,21,21,1)\",\"important\":false}}}}]",
       "3,2": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(229,229,229,1)\",\"important\":false},\"default\":{\"value\":\"rgba(21,21,21,1)\",\"important\":false}}}}]",
       "4,0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(255,255,255,1)\",\"important\":false},\"default\":{\"value\":\"rgba(0,0,0,1)\",\"important\":false}}}}]",
+      "4,1": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(229,229,229,1)\",\"important\":false},\"default\":{\"value\":\"rgba(21,21,21,1)\",\"important\":false}}}}]",
       "4,2": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(229,229,229,1)\",\"important\":false},\"default\":{\"value\":\"rgba(21,21,21,1)\",\"important\":false}}}}]",
       "4,4": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"color\":{\"value\":{\"value\":\"rgba(229,229,229,1)\",\"important\":false},\"default\":{\"value\":\"rgba(21,21,21,1)\",\"important\":false}}}}]",
       "main:0,0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"background-color\":{\"value\":{\"value\":\"rgba(33,33,33,1)\",\"important\":false},\"default\":{\"value\":\"rgba(246,246,246,1)\",\"important\":false}}}}]",
@@ -164,7 +219,10 @@
       "0,0,4,0,0:content-external:0,0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"font-size\":{\"value\":{\"value\":\"24px\",\"important\":false},\"default\":{\"value\":\"88px\",\"important\":false}}}}]",
       "0,0,4,0,1:content-external:0,0": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"font-size\":{\"value\":{\"value\":\"14px\",\"important\":false},\"default\":{\"value\":\"40px\",\"important\":false}}}}]",
       "1": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"padding-left\":{\"value\":{\"value\":\"30px\",\"important\":false},\"default\":{\"value\":\"150px\",\"important\":false}}}},{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"padding-right\":{\"value\":{\"value\":\"30px\",\"important\":false},\"default\":{\"value\":\"150px\",\"important\":false}}}}]",
+      "2,2": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"padding-left\":{\"value\":{\"value\":\"30px\",\"important\":false},\"default\":{\"value\":\"150px\",\"important\":false}}}},{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"padding-right\":{\"value\":{\"value\":\"30px\",\"important\":false},\"default\":{\"value\":\"150px\",\"important\":false}}}}]",
+      "3,1": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"padding-left\":{\"value\":{\"value\":\"30px\",\"important\":false},\"default\":{\"value\":\"150px\",\"important\":false}}}},{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"padding-right\":{\"value\":{\"value\":\"30px\",\"important\":false},\"default\":{\"value\":\"150px\",\"important\":false}}}}]",
       "3,2": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"padding-left\":{\"value\":{\"value\":\"30px\",\"important\":false},\"default\":{\"value\":\"150px\",\"important\":false}}}},{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"padding-right\":{\"value\":{\"value\":\"30px\",\"important\":false},\"default\":{\"value\":\"150px\",\"important\":false}}}}]",
+      "4,1": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"padding-left\":{\"value\":{\"value\":\"30px\",\"important\":false},\"default\":{\"value\":\"150px\",\"important\":false}}}},{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"padding-right\":{\"value\":{\"value\":\"30px\",\"important\":false},\"default\":{\"value\":\"150px\",\"important\":false}}}}]",
       "4,2": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"padding-left\":{\"value\":{\"value\":\"30px\",\"important\":false},\"default\":{\"value\":\"150px\",\"important\":false}}}},{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"padding-right\":{\"value\":{\"value\":\"30px\",\"important\":false},\"default\":{\"value\":\"150px\",\"important\":false}}}}]",
       "4,4": "[{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"padding-left\":{\"value\":{\"value\":\"30px\",\"important\":false},\"default\":{\"value\":\"150px\",\"important\":false}}}},{\"dependency_type\":\"Style\",\"condition\":\"true\",\"parameters\":{\"padding-right\":{\"value\":{\"value\":\"30px\",\"important\":false},\"default\":{\"value\":\"150px\",\"important\":false}}}}]",
       "main:0,0": "[{\"dependency_type\":\"Visible\",\"condition\":\"false\",\"parameters\":{}}]",
@@ -341,8 +399,11 @@ body.fpm-dark .ft_md code {
 </p>
 <p data-id="1,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; font-weight: 400; text-align: left; white-space: initial" class="ft_md"><p>This is due to the increasing popularity of TikTok. In September 2021, TikTok reported 1 billion monthly active users (MAU) worldwide, representing a 45 per cent growth compared to the previously reported figure of 689 million MAU in July 2020 (Statista).</p>
 </p></div>
-<div data-id="2:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; height: 100%; justify-content: flex-start; padding-bottom: 20px; white-space: initial; width: 100%" class="ft_md"><img alt="" data-id="2,0:main" src="static/graph-image.jpg" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; padding-bottom: 15px; white-space: initial"></div>
+<div data-id="2:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; height: 100%; justify-content: flex-start; padding-bottom: 20px; white-space: initial; width: 100%" class="ft_md"><img alt="" data-id="2,0:main" src="static/graph-image.jpg" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; padding-bottom: 15px; white-space: initial">
+<div data-id="2,1:main" style="align-self: center; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(0,0,0,1); display: none; font-family: Itim; font-size: 17px; font-style: italic; font-weight: 400; margin-left: auto; margin-right: auto; text-align: left; white-space: initial; width: 100%" class="ft_md"></div>
+<div data-id="2,2:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(21,21,21,1); display: none; font-family: Itim; font-size: 15px; font-weight: 400; line-height: 24px; padding-bottom: 8px; padding-left: 30px; padding-right: 30px; text-align: left; white-space: initial" class="ft_md"></div></div>
 <div data-id="3:main" id="what-is-tiktok-marketing" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 12px; white-space: initial; width: 100%" class="ft_md"><div data-id="3,0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(0,0,0,1); font-family: Itim; font-size: 26px; font-weight: 400; line-height: 32px; padding-bottom: 8px; padding-top: 16px; text-align: left; white-space: initial" class="ft_md">What is TikTok marketing?</div>
+<div data-id="3,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(21,21,21,1); display: none; font-family: Itim; font-size: 15px; font-weight: 400; line-height: 24px; padding-bottom: 8px; padding-left: 30px; padding-right: 30px; text-align: left; white-space: initial" class="ft_md"></div>
 <div data-id="3,2:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(21,21,21,1); font-family: Itim; font-size: 15px; font-weight: 400; line-height: 24px; padding-bottom: 8px; padding-left: 30px; padding-right: 30px; text-align: left; white-space: initial" class="ft_md"><p data-id="3,2,0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; font-weight: 400; text-align: left; white-space: initial" class="ft_md"><p>TikTok marketing is the practice of using TikTok to promote a brand, product or service. It can include different tactics, like influencer marketing, TikTok advertising and creating organic viral content.</p>
 </p>
 <p data-id="3,2,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; font-weight: 400; text-align: left; white-space: initial" class="ft_md"><ul>
@@ -352,8 +413,18 @@ body.fpm-dark .ft_md code {
 </ul>
 </p></div></div>
 <div data-id="4:main" id="what-is-a-separate-code-block" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 12px; white-space: initial; width: 100%" class="ft_md"><div data-id="4,0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(0,0,0,1); font-family: Itim; font-size: 26px; font-weight: 400; line-height: 32px; padding-bottom: 8px; padding-top: 16px; text-align: left; white-space: initial" class="ft_md">What is a Separate Code Block?</div>
+<div data-id="4,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(21,21,21,1); display: none; font-family: Itim; font-size: 15px; font-weight: 400; line-height: 24px; padding-bottom: 8px; padding-left: 30px; padding-right: 30px; text-align: left; white-space: initial" class="ft_md"></div>
 <div data-id="4,2:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(21,21,21,1); font-family: Itim; font-size: 15px; font-weight: 400; line-height: 24px; padding-bottom: 8px; padding-left: 30px; padding-right: 30px; text-align: left; white-space: initial" class="ft_md">A separate code block is a snippet of code that functions as a standalone element which is not part of the standard article text. An example is listed below:</div>
-<div data-id="4,3:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 12px; padding-top: 12px; white-space: initial; width: 100%" class="ft_md"><div data-id="4,3,2:main" style="background-color: rgba(51,51,51,1); border-bottom-left-radius: 4px !important; border-bottom-right-radius: 4px !important; border-radius: 0px; border-style: solid; border-top-left-radius: 4px !important; border-top-right-radius: 4px !important; border-width: 0px; box-sizing: border-box; color: rgba(82,82,82,1); font-size: 17px; font-weight: 400; line-height: 25px; overflow-x: auto; padding-bottom: 10px; padding-left: 20px; padding-right: 20px; padding-top: 10px; text-align: left; white-space: initial; width: 100%" class="ft_md"><pre style="background-color:#2b303b;"><span style="color:#65737e;">-- </span><span style="color:#ebcb8b;">compopnent heading</span><span style="color:#65737e;">:
+<div data-id="4,3:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 12px; padding-top: 12px; white-space: initial; width: 100%" class="ft_md"><div data-id="4,3,0:main" style="background-color: rgba(55,65,81,1); border-radius: 0px; border-style: solid; border-top-left-radius: 4px !important; border-top-right-radius: 4px !important; border-width: 0px; box-sizing: border-box; color: rgba(191,191,191,1); display: none; font-family: Itim; font-size: 14px; font-weight: 400; padding-bottom: 10px; padding-left: 20px; padding-right: 20px; padding-top: 10px; text-align: left; white-space: initial; width: 100%" class="ft_md"></div>
+<div data-id="4,3,1:main" style="background-color: rgba(51,51,51,1); border-bottom-left-radius: 4px !important; border-bottom-right-radius: 4px !important; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(82,82,82,1); display: none; font-size: 17px; font-weight: 400; line-height: 25px; overflow-x: auto; padding-bottom: 10px; padding-left: 20px; padding-right: 20px; padding-top: 10px; text-align: left; white-space: initial; width: 100%" class="ft_md"><pre style="background-color:#2b303b;"><span style="color:#65737e;">-- </span><span style="color:#ebcb8b;">compopnent heading</span><span style="color:#65737e;">:
+</span><span style="color:#b48ead;">compopnent</span><span style="color:#65737e;">: </span><span style="color:#d08770;">ftd.text
+</span><span style="color:#b48ead;">$title</span><span style="color:#65737e;">: </span><span style="color:#d08770;">caption
+</span><span style="color:#b48ead;">text</span><span style="color:#65737e;">: </span><span style="color:#d08770;">ref $title
+</span><span style="color:#b48ead;">size</span><span style="color:#65737e;">: </span><span style="color:#d08770;">35
+</span><span style="color:#b48ead;">color</span><span style="color:#65737e;">: </span><span style="color:#d08770;">red
+</span></pre>
+</div>
+<div data-id="4,3,2:main" style="background-color: rgba(51,51,51,1); border-bottom-left-radius: 4px !important; border-bottom-right-radius: 4px !important; border-radius: 0px; border-style: solid; border-top-left-radius: 4px !important; border-top-right-radius: 4px !important; border-width: 0px; box-sizing: border-box; color: rgba(82,82,82,1); font-size: 17px; font-weight: 400; line-height: 25px; overflow-x: auto; padding-bottom: 10px; padding-left: 20px; padding-right: 20px; padding-top: 10px; text-align: left; white-space: initial; width: 100%" class="ft_md"><pre style="background-color:#2b303b;"><span style="color:#65737e;">-- </span><span style="color:#ebcb8b;">compopnent heading</span><span style="color:#65737e;">:
 </span><span style="color:#b48ead;">compopnent</span><span style="color:#65737e;">: </span><span style="color:#d08770;">ftd.text
 </span><span style="color:#b48ead;">$title</span><span style="color:#65737e;">: </span><span style="color:#d08770;">caption
 </span><span style="color:#b48ead;">text</span><span style="color:#65737e;">: </span><span style="color:#d08770;">ref $title
@@ -389,7 +460,7 @@ font-family: Itim }</style>
             // all ftd_utils are meant to be pure functions only: they can only depend on the
 // input passed, not on closures or global data etc
 let ftd_utils = {
-    resolve_reference: function (value, reference, data) {
+    resolve_reference: function (value, reference, data, obj) {
         if (value instanceof Object) {
             let result = value instanceof Array ? [] : {};
             for (var key of Object.keys(value)) {
@@ -398,7 +469,7 @@ let ftd_utils = {
                 } else if (reference[key] !== undefined && reference[key] !== null) {
                     result[key] = data[reference[key]]["value"] !== undefined ? data[reference[key]].value : value[key];
                 } else {
-                    result[key] = value[key];
+                    result[key] = (value[key] === "$VALUE" && obj.value !== undefined) ? obj.value : value[key];
                 }
             }
             for (var key of Object.keys(reference)) {
@@ -407,10 +478,10 @@ let ftd_utils = {
                 }
             }
             return result;
-        } else if (reference!== null && reference!== undefined && data[reference]["value"] !== undefined) {
+        } else if (reference !== null && reference !== undefined && data[reference] !== undefined && data[reference]["value"] !== undefined) {
             return data[reference]["value"];
         } else {
-            return value;
+            return (value === "$VALUE" && obj.value !== undefined) ? obj.value : value;
         }
     },
 
@@ -690,7 +761,6 @@ let ftd_utils = {
         data[target].value = value.toString();
 
         let dependencies = data[target].dependencies;
-        console.log(dependencies);
         for (const dependency in dependencies) {
             if (!dependencies.hasOwnProperty(dependency)) {
                 continue;
@@ -706,7 +776,8 @@ let ftd_utils = {
                         ftd_utils.remove_nodes(Object.keys(dependencies).filter(s => !s.endsWith(':dummy')), id);
                         let deps = {};
                         for (const dom_id in dom_ids) {
-                            deps[dom_ids[dom_id].replace(`:${id}`, "")] = dependencies[dependency];
+                            let id_without_main = dom_ids[dom_id].substring(0, dom_ids[dom_id].length - `:${id}`.length )
+                            deps[id_without_main] = dependencies[dependency];
                         }
                         deps[dependency] = dependencies[dependency];
                         data[target].dependencies = deps;
@@ -715,7 +786,10 @@ let ftd_utils = {
                     }
                 } else if (json_dependency.dependency_type === "Visible") {
                     let display = "none";
-                    if (data[target].value === json_dependency.condition) {
+                    if ((data[target].value === json_dependency.condition)
+                        || (json_dependency.condition === "$IsNull$" && data[target].value.trim().length === 0)
+                        || (json_dependency.condition === "$IsNotNull$" && data[target].value.trim().length !== 0)
+                    ) {
                         let is_flex = !!document.querySelector(`[data-id="${dependency}:${id}"]`).style.flexDirection.length;
                         let is_grid = !!document.querySelector(`[data-id="${dependency}:${id}"]`).style.gridTemplateAreas.length;
                         let is_webkit = !!document.querySelector(`[data-id="${dependency}:${id}"]`).style.webkitLineClamp.length;
@@ -834,7 +908,7 @@ window.ftd = (function () {
             if (action["parameters"].data !== undefined) {
                 let value = JSON.parse(action["parameters"].data[0].value);
                 let reference = JSON.parse(action["parameters"].data[0].reference);
-                let data = ftd_utils.resolve_reference(value, reference, ftd_data[id]);
+                let data = ftd_utils.resolve_reference(value, reference, ftd_data[id], obj);
                 let func = data.function.trim().replaceAll("-", "_");
                 window[func](id, data, reference);
             } else {
@@ -847,18 +921,18 @@ window.ftd = (function () {
             if (action["parameters"].by !== undefined) {
                 let by_value = action["parameters"].by[0].value;
                 let by_reference = action["parameters"].by[0].reference;
-                increment = parseInt(ftd_utils.resolve_reference(by_value, by_reference, ftd_data[id]));
+                increment = parseInt(ftd_utils.resolve_reference(by_value, by_reference, ftd_data[id], obj));
             }
             let clamp_max = undefined;
             let clamp_min = undefined;
             if (action["parameters"]["clamp"] !== undefined) {
                 let clamp_value = action["parameters"]["clamp"];
                 if (clamp_value.length === 1) {
-                    clamp_max = parseInt(ftd_utils.resolve_reference(clamp_value[0].value, clamp_value[0].reference, ftd_data[id]));
+                    clamp_max = parseInt(ftd_utils.resolve_reference(clamp_value[0].value, clamp_value[0].reference, ftd_data[id], obj));
                 }
                 if (clamp_value.length === 2) {
-                    clamp_min = parseInt(ftd_utils.resolve_reference(clamp_value[0].value, clamp_value[0].reference, ftd_data[id]));
-                    clamp_max = parseInt(ftd_utils.resolve_reference(clamp_value[1].value, clamp_value[1].reference, ftd_data[id]));
+                    clamp_min = parseInt(ftd_utils.resolve_reference(clamp_value[0].value, clamp_value[0].reference, ftd_data[id], obj));
+                    clamp_max = parseInt(ftd_utils.resolve_reference(clamp_value[1].value, clamp_value[1].reference, ftd_data[id], obj));
                 }
             }
             exports.increment_decrement_value(id, target, increment, clamp_min, clamp_max);
@@ -869,7 +943,7 @@ window.ftd = (function () {
             if (action["parameters"].by !== undefined) {
                 let by_value = action["parameters"].by[0].value;
                 let by_reference = action["parameters"].by[0].reference;
-                decrement = -parseInt(ftd_utils.resolve_reference(by_value, by_reference, ftd_data[id]));
+                decrement = -parseInt(ftd_utils.resolve_reference(by_value, by_reference, ftd_data[id], obj));
             }
 
             let clamp_max = undefined;
@@ -877,31 +951,56 @@ window.ftd = (function () {
             if (action["parameters"]["clamp"] !== undefined) {
                 let clamp_value = action["parameters"]["clamp"];
                 if (clamp_value.length === 1) {
-                    clamp_max = parseInt(ftd_utils.resolve_reference(clamp_value[0].value, clamp_value[0].reference, ftd_data[id]));
+                    clamp_max = parseInt(ftd_utils.resolve_reference(clamp_value[0].value, clamp_value[0].reference, ftd_data[id], obj));
                 }
                 if (clamp_value.length === 2) {
-                    clamp_min = parseInt(ftd_utils.resolve_reference(clamp_value[0].value, clamp_value[0].reference, ftd_data[id]));
-                    clamp_max = parseInt(ftd_utils.resolve_reference(clamp_value[1].value, clamp_value[1].reference, ftd_data[id]));
+                    clamp_min = parseInt(ftd_utils.resolve_reference(clamp_value[0].value, clamp_value[0].reference, ftd_data[id], obj));
+                    clamp_max = parseInt(ftd_utils.resolve_reference(clamp_value[1].value, clamp_value[1].reference, ftd_data[id], obj));
                 }
             }
 
             exports.increment_decrement_value(id, target, decrement, clamp_min, clamp_max);
         } else if (act === "set-value") {
             let target = action["target"];
-            let value = action["parameters"].value[0].value;
+            let value_data = action["parameters"].value[0];
+            let value = ftd_utils.resolve_reference(value_data.value, value_data.reference, ftd_data[id], obj)
             if (action["parameters"].value[1].value === "integer") {
                 value = parseInt(value);
             } else if (action["parameters"].value[1].value === "decimal") {
                 value = parseFloat(value);
             } else if (action["parameters"].value[1].value === "boolean") {
                 value = (value === "true");
-            } else if (action["parameters"].value[0].value === "$VALUE" && obj.value !== undefined ) {
-                value = obj.value
             }
 
             let data = ftd_data[id];
             ftd_utils.handle_action(id, target, value, data, ftd_external_children);
 
+        } else if (act === "insert") {
+            let target = action["target"];
+            let value = undefined;
+            if (action["parameters"].value !== undefined) {
+                let insert_value = action["parameters"].value[0].value;
+                let insert_reference = action["parameters"].value[0].reference;
+                value = ftd_utils.resolve_reference(insert_value, insert_reference, ftd_data[id], obj);
+            }
+            let at = undefined;
+            if (action["parameters"].at !== undefined) {
+                let at_value = action["parameters"].at[0].value;
+                let at_reference = action["parameters"].at[0].reference;
+                at = ftd_utils.resolve_reference(at_value, at_reference, ftd_data[id], obj);
+            }
+
+            exports.insert_value(id, target, value, at);
+
+        } else if (act === "clear") {
+            let target = action["target"];
+            let data = ftd_data[id];
+            let value = "";
+            if (ftd_utils.isJson(data[target].value)) {
+                let list = [];
+                value = JSON.stringify(list);
+            }
+            ftd_utils.handle_action(id, target, value, data, ftd_external_children);
         } else {
             console.log("unknown action:", act);
             return;
@@ -941,6 +1040,38 @@ window.ftd = (function () {
         }
 
         ftd_utils.handle_action(id, variable, value, data, ftd_external_children);
+    }
+
+    exports.insert_value = function (id, target, value, at) {
+        let data = ftd_data[id];
+
+        if (!data[target]) {
+            console.log(target, "is not in data, ignoring");
+            return;
+        }
+
+        let list = data[target].value;
+        if (ftd_utils.isJson(list)) {
+            list = JSON.parse(list);
+        } else {
+            console.log(list, "is not list, ignoring");
+            return;
+        }
+
+        if (value === undefined || value.trim() === "") {
+            console.log("Nothing to insert in ", list);
+            return;
+        }
+
+        if (at !== undefined && at === "end") {
+            list.push(value);
+        } else if (at !== undefined && at === "start") {
+            list.unshift(value);
+        } else {
+            list.push(value);
+        }
+
+        ftd_utils.handle_action(id, target, JSON.stringify(list), data, ftd_external_children);
     }
 
     exports.set_bool = function (id, variable, value) {
@@ -1017,19 +1148,6 @@ window.ftd = (function () {
 
 function console_print(id, data) {
     console.log(data);
-}
-
-function append_list(id, data, reference) {
-    if (reference["list"] !== undefined) {
-        let value = window.ftd.get_value(id, reference["list"]);
-        if (ftd_utils.isJson(value)) {
-            let object = JSON.parse(value);
-            if ((object instanceof Array) && data["value"] !== undefined && data["value"].length !== 0) {
-                object.push(data["value"]);
-                window.ftd.set_string(id, reference["list"], JSON.stringify(object));
-            }
-        }
-    }
 }
 
 
