@@ -16,16 +16,16 @@ padding: 10
 padding-right: 10
 
 --- ftd.text: Dark Mode
-$event-click$: message-host enable-dark-mode
+$on-click$: message-host enable-dark-mode
 padding-right: 10
 
 --- ftd.text: Light Mode
-$event-click$: message-host enable-light-mode
+$on-click$: message-host enable-light-mode
 padding-right: 10
 color: $config.n3
 
 --- ftd.text: System Mode
-$event-click$: message-host enable-system-mode
+$on-click$: message-host enable-system-mode
 padding-right: 10
 color: $config.n9
 
