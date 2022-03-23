@@ -10,7 +10,7 @@ string height: 180
 string link:
 string email:
 width: fill
-background-color if $fpm.dark-mode: $config.n9
+background-color if $ftd.dark-mode: $config.n9
 background-color: $config.n1
 padding-left: 150
 padding-left if $fpm.mobile: 30
@@ -53,7 +53,7 @@ width: percent 80
 caption title:
 optional string link: 
 link: $link
-color if $fpm.dark-mode: $config.n1 
+color if $ftd.dark-mode: $config.n1 
 color: $config.n9
 size: 56
 size if $fpm.mobile: 28
@@ -66,7 +66,7 @@ font: Itim
 body body:
 optional string link: 
 link: $link
-color if $fpm.dark-mode: $config.n3 
+color if $ftd.dark-mode: $config.n3 
 color: $config.n9
 size: 36
 size if $fpm.mobile: 14
@@ -99,7 +99,7 @@ border-radius: 500
 -- ftd.text author-email: $title
 if: not $fpm.mobile
 caption title:
-color if $fpm.dark-mode: $config.n2
+color if $ftd.dark-mode: $config.n2
 color: $config.n9
 size: 24
 line-height: 28

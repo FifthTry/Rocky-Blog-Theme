@@ -17,7 +17,7 @@ padding-left: 150
 padding-right: 150
 padding-bottom:40
 padding-top: 40
-background-color if $fpm.dark-mode: $config.n6 
+background-color if $ftd.dark-mode: $config.n6 
 background-color: $config.n0
 
 -- docs.theme: fifthtry.github.io/Rocky-theme
@@ -517,7 +517,7 @@ string src:
 string width: 330
 string height: 170
 width: fill
-background-color if $fpm.dark-mode: $config.n7
+background-color if $ftd.dark-mode: $config.n7
 background-color: $config.n0
 spacing: 30
 padding-left: 150
@@ -573,7 +573,7 @@ string src:
 string width: 330
 string height: 170
 width: fill
-background-color if $fpm.dark-mode: $config.n7
+background-color if $ftd.dark-mode: $config.n7
 background-color: $config.n0
 spacing: 30
 /spacing if $fpm.mobile: 10
@@ -668,7 +668,7 @@ align: left
 
 -- ftd.text timestamp-caption: $title
 caption title:
-color if $fpm.dark-mode: $config.n3
+color if $ftd.dark-mode: $config.n3
 color: $config.n4
 size: 24
 size if $fpm.mobile: 12
@@ -679,7 +679,7 @@ padding-top if not $fpm.mobile: 15
 
 -- ftd.text timestamp: $title
 caption title:
-color if $fpm.dark-mode: $config.n10
+color if $ftd.dark-mode: $config.n10
 color: $config.n9
 size: 30
 size if $fpm.mobile: 12
@@ -696,7 +696,7 @@ width: fill
 caption title:
 optional string link: 
 link: $link
-color if $fpm.dark-mode: $config.n1
+color if $ftd.dark-mode: $config.n1
 color: $config.n9
 size: 66
 size if $fpm.mobile: 26
@@ -710,7 +710,7 @@ padding-bottom: 25
 body body:
 optional string link: 
 link: $link
-color if $fpm.dark-mode: $config.n3
+color if $ftd.dark-mode: $config.n3
 color: $config.n9
 size: 36
 size if $fpm.mobile: 15
@@ -723,7 +723,7 @@ $body
 
 
 -- ftd.row seperator:
-background-color if $fpm.dark-mode: $config.n7
+background-color if $ftd.dark-mode: $config.n7
 background-color: $config.n0
 width: percent 100
 padding-top: 20
@@ -747,7 +747,7 @@ padding-top if $fpm.mobile: 30
 caption title:
 optional body body:
 optional string link:
-background-color if $fpm.dark-mode: $config.n8
+background-color if $ftd.dark-mode: $config.n8
 background-color: $config.n10
 padding-top: 30
 padding-bottom: 30
@@ -763,7 +763,7 @@ link: $link
 
 
 -- ftd.text footer-link:$title
-color if $fpm.dark-mode: $config.n3
+color if $ftd.dark-mode: $config.n3
 color: $config.n9
 caption title:
 optional string link: 

@@ -34,7 +34,7 @@ text: $body
 size: 18
 line-height: 24
 color: $neutral-700
-color if $fpm.dark-mode: $neutral-200
+color if $ftd.dark-mode: $neutral-200
 padding-bottom: 8
 font: apple-system
 

@@ -15,12 +15,12 @@ background-color: $theme.header
 --- ftd.text: Rocky Theme Color Palete - with 'Itim' font
 width: fill
 color: $theme.l-text-1
-color if $fpm.dark-mode: $theme.d-text-1
+color if $ftd.dark-mode: $theme.d-text-1
 size: 48
 padding-bottom: 10
 text-align: center
 background-color: $theme.l-bg-1
-background-color if $fpm.dark-mode: $theme.d-bg-1
+background-color if $ftd.dark-mode: $theme.d-bg-1
 font: Itim
 
 
@@ -32,7 +32,7 @@ align: center
 width: fill
 spacing: 20
 background-color: $theme.l-bg-3
-background-color if $fpm.dark-mode: $theme.d-bg-3
+background-color if $ftd.dark-mode: $theme.d-bg-3
 padding: 40
 
 
@@ -120,9 +120,9 @@ align: center
 width: fill
 spacing: 20
 color: $theme.l-text-1
-color if $fpm.dark-mode: $theme.d-text-2
+color if $ftd.dark-mode: $theme.d-text-2
 background-color: $theme.l-bg-1
-background-color if $fpm.dark-mode: $theme.d-bg-1
+background-color if $ftd.dark-mode: $theme.d-bg-1
 padding: 100
 
 --- ftd.text: &copy; 2022 - Rocky Theme - Fifthtry.com 
@@ -139,18 +139,18 @@ align: center
 padding: 10
 width: fill
 color: $lightcolorcode
-color if $fpm.dark-mode: $darkcolorcode
+color if $ftd.dark-mode: $darkcolorcode
 spacing: 10
 
 --- ftd.text: $text
 font: Itim
 
 --- ftd.text: $darkcolorcode
-if: $fpm.dark-mode 
+if: $ftd.dark-mode 
 font: Itim
 
 --- ftd.text: $lightcolorcode
-if: not $fpm.dark-mode 
+if: not $ftd.dark-mode 
 font: Itim
 
 
@@ -164,7 +164,7 @@ align: center
 padding: 10
 width: 210
 background-color: $lightcolorcode
-background-color if $fpm.dark-mode: $darkcolorcode
+background-color if $ftd.dark-mode: $darkcolorcode
 color: $theme.primary-text
 spacing: 10
 
@@ -172,11 +172,11 @@ spacing: 10
 font: Itim
 
 --- ftd.text: $darkcolorcode
-if: $fpm.dark-mode 
+if: $ftd.dark-mode 
 font: Itim
 
 --- ftd.text: $lightcolorcode
-if: not $fpm.dark-mode 
+if: not $ftd.dark-mode 
 font: Itim
 
 

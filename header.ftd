@@ -12,7 +12,7 @@ string linkedin-link:
 string instagram-link:
 string redit-link:
 width: fill
-background-color if $fpm.dark-mode: #151515 
+background-color if $ftd.dark-mode: #151515 
 background-color: \#ffffff
 padding-left: 150
 padding-left if $fpm.mobile: 30
@@ -87,7 +87,7 @@ align: left
 caption title:
 optional string url:
 link: $url
-color if $fpm.dark-mode: #E4E4E4 
+color if $ftd.dark-mode: #E4E4E4 
 color: #000000
 size if $fpm.mobile: 21
 size: 48
@@ -106,7 +106,7 @@ spacing: 20
 caption title:
 optional string link: 
 link: $link
-color if $fpm.dark-mode: #676767 
+color if $ftd.dark-mode: #676767 
 color: #7B7B7B
 size: 20
 align: center
